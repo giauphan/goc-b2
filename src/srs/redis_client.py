@@ -1,29 +1,21 @@
-"""
-Redis / Upstash client for SM-2+ Spaced Repetition System.
+"""Upstash Redis client for SM-2+ Spaced Repetition System.
 
-Supports both:
-- Local Redis: redis://localhost:6379/0
-- Upstash Redis: rediss://default:***@host.upstash.io:6379
+Uses Upstash REST API exclusively via env vars:
+  UPSTASH_REDIS_REST_URL=https://<region>.upstash.io
+  UPSTASH_REDIS_REST_TOKEN=<token>
 
 Data model:
-  HASH srs:card:{user_id}:{card_id} → CardState fields
-  ZSET srs:queue:{user_id} → sorted by next_review_at
-  HASH user:{user_id} → user profile data
-  SET   user:lessons:{user_id} → completed lesson IDs
-  STRING user:streak:{user_id} → current streak count
+  HASH srs:card:{user_id}:{card_id} -> CardState fields
+  ZSET srs:queue:{user_id} -> sorted by next_review_at
+  HASH user:{user_id} -> user profile data
+  SET   user:lessons:{user_id} -> completed lesson IDs
+  STRING user:streak:{user_id} -> current streak count
 """
 
 import json
 import time
 import os
 from typing import Optional
-
-try:
-    import redis as redis_mod
-    from redis.exceptions import RedisError
-except ImportError:
-    redis_mod = None
-    RedisError = Exception
 
 
 # ─── Upstash REST API client (lightweight, no redis-py needed) ───
@@ -58,14 +50,14 @@ class UpstashRedisClient:
         self._auth = f"Bearer {self.token}"
     
     def _cmd(self, command: str, *args) -> Optional[dict]:
-        """Execute a Redis command via Upstash REST API."""
+        """Execute a Redis command via Upstash REST API.
+
+        Upstash expects JSON array format: [\"COMMAND\", arg1, arg2, ...]
+        Not the object format used by some other Redis REST gateways.
+        """
         import json as _json
-        import base64
         
-        payload = _json.dumps({
-            "command": command,
-            "args": list(args),
-        }).encode()
+        payload = _json.dumps([command] + list(args)).encode()
         
         req = self._request.Request(
             self.url,
@@ -175,55 +167,33 @@ class UpstashRedisClient:
 # ─── Factory ───
 
 
-def create_redis_client(redis_url: str = "") -> UpstashRedisClient:
+def create_redis_client() -> UpstashRedisClient:
     """
-    Create appropriate Redis client based on URL.
-    
-    Priority:
-    1. UPSTASH_REDIS_REST_URL env var → Upstash REST API
-    2. REDIS_URL starting with 'rediss://' → Upstash (TLS)
-    3. REDIS_URL starting with 'redis://' → local Redis
-    4. Default → Upstash REST API (requires env vars)
-    """
+    Create Upstash Redis client from environment variables.
+
+    Requires:
+      UPSTASH_REDIS_REST_URL=https://<region>.upstash.io
+      UPSTASH_REDIS_REST_TOKEN=***    """
     rest_url = os.environ.get("UPSTASH_REDIS_REST_URL", "")
     rest_token = os.environ.get("UPSTASH_REDIS_REST_TOKEN", "")
-    
+
     if rest_url and rest_token:
         return UpstashRedisClient(url=rest_url, token=rest_token)
-    
-    # Fallback: try standard redis-py for local Redis
-    if redis_mod and (not redis_url or redis_url.startswith("redis://")):
-        url = redis_url or os.environ.get("REDIS_URL", "redis://localhost:6379/0")
-        if url.startswith("redis://"):
-            pool = redis_mod.ConnectionPool.from_url(
-                url,
-                max_connections=10,
-                socket_timeout=5,
-                socket_connect_timeout=3,
-                retry_on_timeout=True,
-                decode_responses=True,
-            )
-            return redis_mod.Redis(connection_pool=pool)
-    
-    # Try Upstash as last resort
-    if rest_url and rest_token:
-        return UpstashRedisClient(url=rest_url, token=rest_token)
-    
+
     raise ValueError(
-        "No Redis configuration found. "
-        "Set UPSTASH_REDIS_REST_URL + UPSTASH_REDIS_REST_TOKEN for Upstash, "
-        "or REDIS_URL for local Redis."
+        "Upstash Redis credentials not found. "
+        "Set UPSTASH_REDIS_REST_URL + UPSTASH_REDIS_REST_TOKEN env vars."
     )
 
 
-# ─── SRS Client (uses Upstash or Redis) ───
+# ─── SRS Client (Upstash-only) ───
 
 
 class SRSRedisClient:
-    """SRS client that works with both Upstash REST API and local Redis."""
+    """SRS client backed by Upstash Redis REST API."""
     
-    def __init__(self, redis_url: str = ""):
-        self.client = create_redis_client(redis_url)
+    def __init__(self):
+        self.client = create_redis_client()
     
     def _card_key(self, user_id: str, card_id: str) -> str:
         return f"srs:card:{user_id}:{card_id}"

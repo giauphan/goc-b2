@@ -26,7 +26,7 @@ Website/app học tiếng Anh dành cho người Việt mất gốc và người
 ## Cấu trúc thư mục
 
 ```
-mrdir/
+goc-b2/
 ├── research/              # Tài liệu nghiên cứu
 │   └── english-learning-brief.md
 ├── src/
@@ -47,16 +47,18 @@ mrdir/
 └── README.md
 ```
 
-## Quick Start (Backend)
+## Quick Start
 
 ```bash
-# Clone
-cd ~/mrdir
+cd ~/goc-b2
 
 # Setup Python SRS engine
 python3 -m venv venv
 source venv/bin/activate
-pip install redis pytest
+pip install pytest
+
+# Set Upstash Redis credentials
+source .env
 
 # Test SRS engine
 python3 -c "
@@ -66,10 +68,7 @@ card = sm2(card, 4)  # Quality 4/5
 print(f'Next review in {card.interval} days, EF={card.ef:.2f}')
 "
 
-# Redis setup (Docker)
-docker run -d --name mrdir-redis -p 6379:6379 redis:7-alpine
-
-# Run SRS with Redis
+# Run SRS with Upstash Redis
 python3 -c "
 from src.srs.redis_client import SRSRedisClient
 client = SRSRedisClient()
