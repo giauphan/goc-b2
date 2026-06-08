@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mất Gốc → B2 — Học Tiếng Anh Cho Người Việt</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { 50: '#eff6ff', 100: '#dbeafe', 200: '#bfdbfe', 300: '#93c5fd', 400: '#60a5fa', 500: '#3b82f6', 600: '#2563eb', 700: '#1d4ed8', 800: '#1e40af', 900: '#1e3a8a' },
+            accent: { 50: '#fdf4ff', 100: '#fae8ff', 200: '#f5d0fe', 300: '#f0abfc', 400: '#e879f9', 500: '#d946ef', 600: '#c026d3', 700: '#a21caf', 800: '#86198f', 900: '#701a75' },
+          },
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .gradient-hero { background: linear-gradient(135deg, #1e3a8a 0%, #312e81 50%, #581c87 100%); }
+    .gradient-card { background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%); }
+    .card-hover { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+    .card-hover:hover { transform: translateY(-4px); box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.15); }
+    .feature-icon { transition: transform 0.3s ease; }
+    .card-hover:hover .feature-icon { transform: scale(1.1); }
+    .step-connector { height: 2px; background: linear-gradient(90deg, #3b82f6, #8b5cf6); }
+    .text-gradient { background: linear-gradient(135deg, #60a5fa, #a78bfa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+    .float-anim { animation: float 3s ease-in-out infinite; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900 antialiased">
+
+  <!-- ═══ NAV ═══ -->
+  <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-lg border-b border-gray-100 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <div class="w-8 h-8 rounded-lg gradient-card flex items-center justify-center text-white font-bold text-sm">GB</div>
+        <span class="font-bold text-lg">Gốc.<span class="text-brand-500">B2</span></span>
+      </div>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
+        <a href="#features" class="hover:text-brand-600 transition">Tính năng</a>
+        <a href="#how-it-works" class="hover:text-brand-600 transition">Cách học</a>
+        <a href="#curriculum" class="hover:text-brand-600 transition">Giáo trình</a>
+        <a href="#faq" class="hover:text-brand-600 transition">FAQ</a>
+      </div>
+      <a href="#" class="px-5 py-2.5 bg-brand-600 hover:bg-brand-700 text-white text-sm font-medium rounded-lg transition shadow-lg shadow-brand-200">Bắt đầu học →</a>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO ═══ -->
+  <section class="gradient-hero pt-32 pb-24 md:pb-32 px-4 relative overflow-hidden">
+    <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMiIvPjwvZz48L2c+PC9zdmc+')] opacity-40"></div>
+    <div class="max-w-6xl mx-auto relative">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-white/80 text-sm mb-6">
+            <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+            Dành cho người mất gốc & A1-B2
+          </div>
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
+            Học Tiếng Anh<br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-purple-300">Từ Con Số 0</span>
+          </h1>
+          <p class="text-lg md:text-xl text-blue-100/80 leading-relaxed mb-8 max-w-lg">
+            Giáo trình thiết kế riêng cho người Việt. Học phát âm, ngữ pháp, 
+            từ vựng qua hình ảnh, âm thanh — <strong>giải thích bằng tiếng Việt</strong> 
+            để bạn hiểu ngay từ đầu.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a href="#" class="px-8 py-3.5 bg-white hover:bg-blue-50 text-brand-700 font-semibold rounded-xl transition shadow-xl shadow-black/10">Bắt đầu học miễn phí →</a>
+            <a href="#" class="px-8 py-3.5 border border-white/20 text-white/90 hover:bg-white/10 font-medium rounded-xl transition">Xem giáo trình</a>
+          </div>
+          <div class="flex items-center gap-6 mt-8 text-white/60 text-sm">
+            <span class="flex items-center gap-1">★ 125+ từ vựng A1</span>
+            <span class="w-1 h-1 bg-white/30 rounded-full"></span>
+            <span class="flex items-center gap-1">🎯 SM-2 ghi nhớ</span>
+            <span class="w-1 h-1 bg-white/30 rounded-full"></span>
+            <span class="flex items-center gap-1">🇻🇳 Giải thích thuần Việt</span>
+          </div>
+        </div>
+        <div class="hidden md:block relative">
+          <div class="relative float-anim">
+            <div class="w-full aspect-square max-w-md mx-auto bg-gradient-to-br from-blue-400/20 to-purple-400/20 rounded-3xl backdrop-blur-sm border border-white/10 p-8">
+              <div class="bg-white/95 rounded-2xl p-6 shadow-2xl">
+                <div class="flex items-center gap-3 mb-4">
+                  <div class="w-10 h-10 bg-gradient-to-br from-green-400 to-emerald-500 rounded-full flex items-center justify-center text-white text-lg">✓</div>
+                  <div>
+                    <div class="text-sm font-semibold">Hôm nay bạn học được</div>
+                    <div class="text-xs text-gray-400">Streak: 7 ngày 🔥</div>
+                  </div>
+                  <div class="ml-auto text-right">
+                    <div class="text-2xl font-bold text-brand-600">12</div>
+                    <div class="text-xs text-gray-400">từ mới</div>
+                  </div>
+                </div>
+                <div class="space-y-3">
+                  <div class="flex items-center gap-3 p-2.5 bg-blue-50 rounded-lg">
+                    <span class="text-2xl">🍎</span>
+                    <div class="flex-1">
+                      <div class="font-semibold">apple</div>
+                      <div class="text-xs text-gray-400">/ˈæpəl/ — quả táo</div>
+                    </div>
+                    <div class="flex gap-1">
+                      <span class="w-5 h-5 bg-green-100 rounded text-xs flex items-center justify-center">✓</span>
+                      <span class="w-5 h-5 bg-green-100 rounded text-xs flex items-center justify-center">✓</span>
+                      <span class="w-5 h-5 bg-gray-100 rounded text-xs flex items-center justify-center">⋯</span>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-3 p-2.5 bg-purple-50 rounded-lg">
+                    <span class="text-2xl">👩</span>
+                    <div class="flex-1">
+                      <div class="font-semibold">mother</div>
+                      <div class="text-xs text-gray-400">/ˈmʌðər/ — mẹ</div>
+                    </div>
+                    <div class="flex gap-1">
+                      <span class="w-5 h-5 bg-green-100 rounded text-xs flex items-center justify-center">✓</span>
+                      <span class="w-5 h-5 bg-yellow-100 rounded text-xs flex items-center justify-center">!</span>
+                      <span class="w-5 h-5 bg-gray-100 rounded text-xs flex items-center justify-center">⋯</span>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-3 p-2.5 bg-gray-50 rounded-lg opacity-60">
+                    <span class="text-2xl">🏠</span>
+                    <div class="flex-1">
+                      <div class="font-semibold">house</div>
+                      <div class="text-xs text-gray-400">/haʊs/ — ngôi nhà</div>
+                    </div>
+                    <div class="text-xs text-gray-400">15 phút</div>
+                  </div>
+                </div>
+                <div class="mt-4 pt-3 border-t border-gray-100">
+                  <div class="flex justify-between text-xs text-gray-400 mb-1">
+                    <span>Tiến độ hôm nay</span>
+                    <span>12/20 từ</span>
+                  </div>
+                  <div class="h-2 bg-gray-100 rounded-full overflow-hidden">
+                    <div class="h-full w-3/5 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FEATURES ═══ -->
+  <section id="features" class="py-20 md:py-28 px-4">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <span class="text-brand-600 font-semibold text-sm tracking-wider uppercase">Tính năng</span>
+        <h2 class="text-3xl md:text-4xl font-bold mt-3 mb-4">Tại sao học với Gốc.B2?</h2>
+        <p class="text-gray-500 max-w-xl mx-auto">Thiết kế dựa trên nghiên cứu về khó khăn đặc thù của người Việt khi học tiếng Anh.</p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-2xl border border-gray-100 card-hover">
+          <div class="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center mb-4 feature-icon">
+            <span class="text-xl">🇻🇳</span>
+          </div>
+          <h3 class="font-bold text-lg mb-2">Giải thích bằng tiếng Việt</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Không học mơ hồ. Mọi ngữ pháp, phát âm đều được giải thích bằng tiếng Việt — đúng chỗ khó của người Việt.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl border border-gray-100 card-hover">
+          <div class="w-10 h-10 bg-purple-100 rounded-xl flex items-center justify-center mb-4 feature-icon">
+            <span class="text-xl">🧠</span>
+          </div>
+          <h3 class="font-bold text-lg mb-2">SM-2 Ghi Nhớ Thông Minh</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Thuật toán lặp lại ngắt quãng (Spaced Repetition) giúp bạn nhớ từ vựng lâu dài — ôn đúng lúc sắp quên.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl border border-gray-100 card-hover">
+          <div class="w-10 h-10 bg-emerald-100 rounded-xl flex items-center justify-center mb-4 feature-icon">
+            <span class="text-xl">🎯</span>
+          </div>
+          <h3 class="font-bold text-lg mb-2">Lộ Trình A1 → B2</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Bài bản từ con số 0. 5 chủ đề A1: Family, Colors, Food, Numbers, Body. Mỗi tuần một bước tiến rõ ràng.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl border border-gray-100 card-hover">
+          <div class="w-10 h-10 bg-amber-100 rounded-xl flex items-center justify-center mb-4 feature-icon">
+            <span class="text-xl">🗣️</span>
+          </div>
+          <h3 class="font-bold text-lg mb-2">Phát Âm & Nghe</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Luyện các âm khó: /θ/ (think), /ð/ (this), /ʃ/ (ship), /tʃ/ (cheap). So sánh cặp tối thiểu (minimal pairs).</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl border border-gray-100 card-hover">
+          <div class="w-10 h-10 bg-rose-100 rounded-xl flex items-center justify-center mb-4 feature-icon">
+            <span class="text-xl">📸</span>
+          </div>
+          <h3 class="font-bold text-lg mb-2">Học Qua Hình Ảnh</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Mỗi từ vựng đi kèm hình ảnh thực tế + audio giọng bản xứ + câu ví dụ — kích thích đa giác quan.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl border border-gray-100 card-hover">
+          <div class="w-10 h-10 bg-cyan-100 rounded-xl flex items-center justify-center mb-4 feature-icon">
+            <span class="text-xl">📊</span>
+          </div>
+          <h3 class="font-bold text-lg mb-2">Theo Dõi Tiến Trình</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Biết bạn đã học bao nhiêu từ, độ chính xác, từ nào yếu. Streak & XP tạo động lực mỗi ngày.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ HOW IT WORKS ═══ -->
+  <section id="how-it-works" class="py-20 md:py-28 px-4 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <span class="text-brand-600 font-semibold text-sm tracking-wider uppercase">Cách học</span>
+        <h2 class="text-3xl md:text-4xl font-bold mt-3 mb-4">Mỗi ngày 15 phút</h2>
+        <p class="text-gray-500 max-w-xl mx-auto">Quy trình học được thiết kế tối ưu cho người đi làm, người bận rộn.</p>
+      </div>
+      <div class="grid md:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 mx-auto bg-gradient-to-br from-blue-400 to-blue-600 rounded-2xl flex items-center justify-center text-white text-2xl font-bold shadow-lg shadow-blue-200 mb-4">1</div>
+          <div class="step-connector w-1/2 mx-auto hidden md:block -mt-8 mb-4"></div>
+          <h3 class="font-bold text-lg mb-2">Học Từ Mới</h3>
+          <p class="text-gray-500 text-sm">5 từ mới mỗi ngày. Xem hình ảnh, nghe phát âm, đọc ví dụ.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 mx-auto bg-gradient-to-br from-purple-400 to-purple-600 rounded-2xl flex items-center justify-center text-white text-2xl font-bold shadow-lg shadow-purple-200 mb-4">2</div>
+          <h3 class="font-bold text-lg mb-2">Làm Bài Tập</h3>
+          <p class="text-gray-500 text-sm">Trắc nghiệm, điền từ, nghe chép chính tả, sắp xếp câu.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 mx-auto bg-gradient-to-br from-pink-400 to-pink-600 rounded-2xl flex items-center justify-center text-white text-2xl font-bold shadow-lg shadow-pink-200 mb-4">3</div>
+          <h3 class="font-bold text-lg mb-2">Ôn Tập SM-2</h3>
+          <p class="text-gray-500 text-sm">Hệ thống tự động ôn đúng lúc bạn sắp quên. Mỗi từ ôn 6 lần thì nhớ vĩnh viễn.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 mx-auto bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-2xl flex items-center justify-center text-white text-2xl font-bold shadow-lg shadow-emerald-200 mb-4">4</div>
+          <h3 class="font-bold text-lg mb-2">Lên Level</h3>
+          <p class="text-gray-500 text-sm">A1 → A2 → B1 → B2. Mỗi cấp độ mở khóa nội dung mới, thử thách mới.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CURRICULUM ═══ -->
+  <section id="curriculum" class="py-20 md:py-28 px-4">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <span class="text-brand-600 font-semibold text-sm tracking-wider uppercase">Giáo trình</span>
+        <h2 class="text-3xl md:text-4xl font-bold mt-3 mb-4">125 từ vựng A1 — 5 chủ đề</h2>
+        <p class="text-gray-500 max-w-xl mx-auto">Giáo trình A1 đầu tiên đã sẵn sàng. Mỗi từ có: hình ảnh, IPA, audio, ví dụ, dịch nghĩa.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-4">
+        <div class="bg-white p-5 rounded-xl border border-gray-100 card-hover">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="text-2xl">👨‍👩‍👧‍👦</span>
+            <div>
+              <div class="font-bold">Family & People</div>
+              <div class="text-xs text-gray-400">25 từ</div>
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="text-xs bg-blue-50 text-blue-600 px-2 py-0.5 rounded">mother</span>
+            <span class="text-xs bg-blue-50 text-blue-600 px-2 py-0.5 rounded">father</span>
+            <span class="text-xs bg-blue-50 text-blue-600 px-2 py-0.5 rounded">brother</span>
+            <span class="text-xs bg-blue-50 text-blue-600 px-2 py-0.5 rounded">sister</span>
+            <span class="text-xs bg-blue-50 text-blue-600 px-2 py-0.5 rounded">friend</span>
+            <span class="text-xs bg-blue-50 text-blue-600 px-2 py-0.5 rounded">...</span>
+          </div>
+        </div>
+        <div class="bg-white p-5 rounded-xl border border-gray-100 card-hover">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="text-2xl">🎨</span>
+            <div>
+              <div class="font-bold">Colors & Descriptions</div>
+              <div class="text-xs text-gray-400">25 từ</div>
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="text-xs bg-purple-50 text-purple-600 px-2 py-0.5 rounded">red</span>
+            <span class="text-xs bg-purple-50 text-purple-600 px-2 py-0.5 rounded">big</span>
+            <span class="text-xs bg-purple-50 text-purple-600 px-2 py-0.5 rounded">beautiful</span>
+            <span class="text-xs bg-purple-50 text-purple-600 px-2 py-0.5 rounded">happy</span>
+            <span class="text-xs bg-purple-50 text-purple-600 px-2 py-0.5 rounded">hungry</span>
+            <span class="text-xs bg-purple-50 text-purple-600 px-2 py-0.5 rounded">...</span>
+          </div>
+        </div>
+        <div class="bg-white p-5 rounded-xl border border-gray-100 card-hover">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="text-2xl">🍕</span>
+            <div>
+              <div class="font-bold">Food & Drink</div>
+              <div class="text-xs text-gray-400">25 từ</div>
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="text-xs bg-green-50 text-green-600 px-2 py-0.5 rounded">rice</span>
+            <span class="text-xs bg-green-50 text-green-600 px-2 py-0.5 rounded">chicken</span>
+            <span class="text-xs bg-green-50 text-green-600 px-2 py-0.5 rounded">apple</span>
+            <span class="text-xs bg-green-50 text-green-600 px-2 py-0.5 rounded">coffee</span>
+            <span class="text-xs bg-green-50 text-green-600 px-2 py-0.5 rounded">delicious</span>
+            <span class="text-xs bg-green-50 text-green-600 px-2 py-0.5 rounded">...</span>
+          </div>
+        </div>
+        <div class="bg-white p-5 rounded-xl border border-gray-100 card-hover">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="text-2xl">🔢</span>
+            <div>
+              <div class="font-bold">Numbers & Time</div>
+              <div class="text-xs text-gray-400">25 từ</div>
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="text-xs bg-amber-50 text-amber-600 px-2 py-0.5 rounded">one</span>
+            <span class="text-xs bg-amber-50 text-amber-600 px-2 py-0.5 rounded">today</span>
+            <span class="text-xs bg-amber-50 text-amber-600 px-2 py-0.5 rounded">morning</span>
+            <span class="text-xs bg-amber-50 text-amber-600 px-2 py-0.5 rounded">week</span>
+            <span class="text-xs bg-amber-50 text-amber-600 px-2 py-0.5 rounded">year</span>
+            <span class="text-xs bg-amber-50 text-amber-600 px-2 py-0.5 rounded">...</span>
+          </div>
+        </div>
+        <div class="bg-white p-5 rounded-xl border border-gray-100 card-hover">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="text-2xl">🦶</span>
+            <div>
+              <div class="font-bold">Body & Places</div>
+              <div class="text-xs text-gray-400">25 từ</div>
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="text-xs bg-rose-50 text-rose-600 px-2 py-0.5 rounded">head</span>
+            <span class="text-xs bg-rose-50 text-rose-600 px-2 py-0.5 rounded">house</span>
+            <span class="text-xs bg-rose-50 text-rose-600 px-2 py-0.5 rounded">school</span>
+            <span class="text-xs bg-rose-50 text-rose-600 px-2 py-0.5 rounded">kitchen</span>
+            <span class="text-xs bg-rose-50 text-rose-600 px-2 py-0.5 rounded">hospital</span>
+            <span class="text-xs bg-rose-50 text-rose-600 px-2 py-0.5 rounded">...</span>
+          </div>
+        </div>
+        <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-5 rounded-xl text-white flex items-center justify-center card-hover cursor-pointer border border-gray-700">
+          <div class="text-center">
+            <div class="text-3xl mb-2">🔒</div>
+            <div class="font-bold text-lg">A2 — Sắp ra mắt</div>
+            <div class="text-gray-400 text-sm">500+ từ vựng</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CTA ═══ -->
+  <section class="py-20 px-4 bg-gradient-to-br from-gray-900 to-gray-800">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Bắt đầu ngay hôm nay</h2>
+      <p class="text-gray-400 text-lg mb-8">125 từ vựng A1 có sẵn. Học 15 phút mỗi ngày — 3 tháng là bạn hết mất gốc.</p>
+      <a href="#" class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-semibold rounded-xl transition shadow-xl shadow-purple-900/30">
+        <span>Học miễn phí</span>
+        <span>→</span>
+      </a>
+      <div class="flex items-center justify-center gap-8 mt-8 text-gray-500 text-sm">
+        <span>📱 PWA — Học offline</span>
+        <span>⚡ Không cần đăng ký</span>
+        <span>🎯 SM-2 Spaced Repetition</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="py-8 px-4 border-t border-gray-100 bg-white">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-400">
+      <div class="flex items-center gap-2">
+        <div class="w-6 h-6 rounded gradient-card flex items-center justify-center text-white font-bold text-xs">GB</div>
+        <span>Gốc.B2 — Học tiếng Anh cho người Việt</span>
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="#" class="hover:text-gray-600 transition">GitHub</a>
+        <a href="#" class="hover:text-gray-600 transition">Tài liệu</a>
+        <a href="#" class="hover:text-gray-600 transition">Liên hệ</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

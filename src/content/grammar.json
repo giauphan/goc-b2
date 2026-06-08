@@ -1,0 +1,143 @@
+{
+  "meta": {
+    "title": "Vietnamese-Focused Grammar Module",
+    "description": "Grammar topics specifically designed for Vietnamese learners' pain points."
+  },
+  "topics": [
+    {
+      "id": "grammar-articles",
+      "title": "Mạo từ: a/an/the",
+      "vi_explanation": "Tiếng Việt KHÔNG có mạo từ. Đây là lỗi #1 của người Việt học tiếng Anh.",
+      "level": "A1",
+      "rules": [
+        {
+          "rule": "Dùng 'a' trước phụ âm: a cat, a house, a student",
+          "example": "I have a cat. → Tôi có một con mèo.",
+          "common_mistake": "I have cat. ❌ (Thiếu 'a')"
+        },
+        {
+          "rule": "Dùng 'an' trước nguyên âm (a, e, i, o, u): an apple, an hour",
+          "example": "She is an engineer. → Cô ấy là kỹ sư.",
+          "common_mistake": "She is engineer. ❌"
+        },
+        {
+          "rule": "Dùng 'the' khi người nghe biết rõ vật nào: the book on the table",
+          "example": "The book on the table is mine. → Quyển sách trên bàn là của tôi.",
+          "common_mistake": "Book on table is mine. ❌"
+        },
+        {
+          "rule": "Không dùng 'the' với danh từ chung chung: I like music (không phải 'the music')",
+          "example": "I like music. → Tôi thích âm nhạc.",
+          "common_mistake": "I like the music. ❌"
+        }
+      ],
+      "exercises": [
+        { "question": "I have ___ apple.", "options": ["a", "an", "the", "(none)"], "correct": "an" },
+        { "question": "She is ___ teacher.", "options": ["a", "an", "the", "(none)"], "correct": "a" },
+        { "question": "___ sun is very hot today.", "options": ["A", "An", "The", "(none)"], "correct": "The" },
+        { "question": "I like ___ dogs. (nói chung)", "options": ["a", "an", "the", "(none)"], "correct": "(none)" },
+        { "question": "He is ___ honest man.", "options": ["a", "an", "the", "(none)"], "correct": "an" }
+      ]
+    },
+    {
+      "id": "grammar-tenses",
+      "title": "Thì (Tenses)",
+      "vi_explanation": "Tiếng Việt không chia động từ theo thì! Bạn nói 'hôm qua tôi ăn cơm' — động từ 'ăn' không đổi. Tiếng Anh: 'yesterday I ate rice' — động từ 'eat' → 'ate'.",
+      "level": "A1",
+      "rules": [
+        {
+          "rule": "Hiện tại đơn (Present Simple): Hành động thường xuyên / sự thật",
+          "example": "I eat rice every day. → Tôi ăn cơm mỗi ngày.",
+          "note": "Thêm -s/-es với He/She/It: She eats rice."
+        },
+        {
+          "rule": "Quá khứ đơn (Past Simple): Hành động đã xong trong quá khứ",
+          "example": "Yesterday I ate rice. → Hôm qua tôi ăn cơm.",
+          "note": "Động từ bất quy tắc: eat → ate, go → went, see → saw"
+        },
+        {
+          "rule": "Tương lai đơn (Future Simple): Hành động sẽ làm",
+          "example": "Tomorrow I will eat rice. → Ngày mai tôi sẽ ăn cơm.",
+          "note": "Tiếng Việt dùng 'sẽ' — tiếng Anh dùng 'will'."
+        },
+        {
+          "rule": "Hiện tại tiếp diễn (Present Continuous): Đang làm bây giờ",
+          "example": "I am eating rice now. → Bây giờ tôi đang ăn cơm.",
+          "note": "Tiếng Việt dùng 'đang' — tiếng Anh dùng 'am/is/are + V-ing'."
+        }
+      ],
+      "exercises": [
+        { "question": "I ___ (go) to school yesterday.", "options": ["go", "goes", "went", "going"], "correct": "went" },
+        { "question": "She ___ (eat) breakfast every morning.", "options": ["eat", "eats", "ate", "eating"], "correct": "eats" },
+        { "question": "They ___ (play) soccer right now.", "options": ["play", "plays", "played", "are playing"], "correct": "are playing" },
+        { "question": "I ___ (be) a student.", "options": ["am", "is", "are", "be"], "correct": "am" },
+        { "question": "Tomorrow we ___ (visit) grandma.", "options": ["visit", "visited", "will visit", "are visiting"], "correct": "will visit" }
+      ]
+    },
+    {
+      "id": "grammar-sv-agreement",
+      "title": "Chủ ngữ — Động từ (Subject-Verb Agreement)",
+      "vi_explanation": "Tiếng Việt: 'Tôi đi' = 'Cô ấy đi' (động từ giống nhau). Tiếng Anh: 'I go' ≠ 'She goes'. Luôn thêm -s/-es khi chủ ngữ là He/She/It.",
+      "level": "A1",
+      "rules": [
+        {
+          "rule": "He/She/It + V-s/es: He walks, She runs, It rains",
+          "example": "She walks to school. → Cô ấy đi bộ đến trường.",
+          "common_mistake": "She walk to school. ❌ (thiếu 's')"
+        },
+        {
+          "rule": "I/You/We/They + V (nguyên mẫu): I walk, They run",
+          "example": "I walk to school. → Tôi đi bộ đến trường."
+        },
+        {
+          "rule": "Quy tắc thêm -es: kết thúc bằng -s/-sh/-ch/-x/-o: watch → watches, go → goes",
+          "example": "He watches TV every night.",
+          "common_mistake": "He watch TV ❌"
+        }
+      ]
+    },
+    {
+      "id": "grammar-pronunciation",
+      "title": "Phát Âm Khó Cho Người Việt",
+      "vi_explanation": "Các âm sau KHÔNG có trong tiếng Việt. Bạn cần luyện riêng.",
+      "level": "A1",
+      "sounds": [
+        { "sound": "/θ/ (voiceless th)", "vi_closest": "t hoặc th", "example_words": ["think /θɪŋk/", "thank /θæŋk/", "three /θriː/", "tooth /tuːθ/"] },
+        { "sound": "/ð/ (voiced th)", "vi_closest": "d hoặc đ", "example_words": ["this /ðɪs/", "that /ðæt/", "mother /ˈmʌðər/", "the /ðə/"] },
+        { "sound": "/ʃ/ (sh)", "vi_closest": "s (nhưng cong lưỡi)", "example_words": ["ship /ʃɪp/", "sheep /ʃiːp/", "fish /fɪʃ/", "shower /ˈʃaʊər/"] },
+        { "sound": "/tʃ/ (ch)", "vi_closest": "ch (nhưng bật hơi)", "example_words": ["cheap /tʃiːp/", "chicken /ˈtʃɪkɪn/", "teach /tiːtʃ/", "chair /tʃɛr/"] },
+        { "sound": "/ʒ/ (zh)", "vi_closest": "gi (d+di)", "example_words": ["measure /ˈmeʒər/", "pleasure /ˈpleʒər/", "vision /ˈvɪʒən/"] },
+        { "sound": "Final consonants (-t, -d, -k, -p, -b)", "vi_closest": "Tiếng Việt KHÔNG bật các âm cuối", "example_words": ["cat /kæt/ (not /ka/)", "dog /dɒɡ/ (not /dɔ/)", "cup /kʌp/", "bed /bed/"] }
+      ],
+      "minimal_pairs": [
+        {"pair": "ship /ʃɪp/ vs sheep /ʃiːp/", "tip": "/i/ ngắn vs /iː/ dài. 'Ship' ngắn hơn 'sheep'."},
+        {"pair": "think /θɪŋk/ vs sink /sɪŋk/", "tip": "Đặt lưỡi giữa hai hàm răng cho 'th', không chạm răng cho 's'."},
+        {"pair": "cheap /tʃiːp/ vs jeep /dʒiːp/", "tip": "/tʃ/ bật hơi, /dʒ/ rung dây thanh."},
+        {"pair": "cat /kæt/ vs cart /kɑːrt/", "tip": "/æ/ miệng mở rộng, /ɑː/ miệng mở vừa."}
+      ]
+    },
+    {
+      "id": "grammar-word-order",
+      "title": "Trật Tự Từ (Word Order)",
+      "vi_explanation": "Tiếng Việt: 'nhà đẹp' (noun + adj). Tiếng Anh: 'beautiful house' (adj + noun). Ngược nhau!",
+      "level": "A1",
+      "rules": [
+        {
+          "rule": "Tính từ luôn TRƯỚC danh từ trong tiếng Anh",
+          "example": "a beautiful house → một ngôi nhà đẹp",
+          "common_mistake": "a house beautiful ❌ (theo thứ tự tiếng Việt)"
+        },
+        {
+          "rule": "Cấu trúc câu cơ bản: Subject + Verb + Object",
+          "example": "I (S) eat (V) rice (O). → Tôi ăn cơm.",
+          "note": "Giống tiếng Việt! SVO."
+        },
+        {
+          "rule": "Trạng từ tần suất (always, usually, often) đứng TRƯỚC động từ chính",
+          "example": "I always eat breakfast. → Tôi luôn ăn sáng.",
+          "common_mistake": "I eat always breakfast ❌"
+        }
+      ]
+    }
+  ]
+}
