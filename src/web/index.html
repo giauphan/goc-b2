@@ -86,6 +86,7 @@
       <span class="nav-tab active" data-page="home">Trang chủ</span>
       <span class="nav-tab" data-page="study">Học</span>
       <span class="nav-tab" data-page="quiz">Quiz</span>
+      <span class="nav-tab" data-page="sentence">Viết câu</span>
       <span class="nav-tab" data-page="grammar">Ngữ pháp</span>
       <span class="nav-tab" data-page="stats">Tiến độ</span>
     </div>
@@ -337,6 +338,74 @@
   </div>
 </div>
 
+<!-- ════════════════════════════════════════════════════ -->
+<!-- PAGE: SENTENCE PRACTICE -->
+<!-- ════════════════════════════════════════════════════ -->
+<div id="page-sentence" class="page">
+  <div class="max-w-2xl mx-auto px-4 pt-24 pb-12">
+    <h2 class="text-2xl font-bold mb-1">✍️ Luyện viết câu</h2>
+    <p class="text-gray-500 text-sm mb-6">Điền từ vào chỗ trống hoặc tự viết câu của bạn.</p>
+
+    <!-- Level filter -->
+    <div class="flex gap-2 mb-4">
+      <button class="level-s-btn px-4 py-1.5 rounded-full text-sm font-medium transition active" data-level="all" onclick="filterSentenceLevel('all')">Tất cả</button>
+      <button class="level-s-btn px-4 py-1.5 rounded-full text-sm font-medium transition" data-level="a1" onclick="filterSentenceLevel('a1')">A1</button>
+      <button class="level-s-btn px-4 py-1.5 rounded-full text-sm font-medium transition" data-level="a2" onclick="filterSentenceLevel('a2')">A2</button>
+    </div>
+
+    <!-- Sentence practice area -->
+    <div id="sentence-area">
+      <div class="bg-white rounded-2xl border border-gray-100 p-6 md:p-8 shadow-sm">
+
+        <!-- Word display -->
+        <div class="flex items-center gap-3 mb-4">
+          <span class="text-2xl">📝</span>
+          <div>
+            <span class="text-xs text-gray-400" id="s-unit-label">A1 · Family</span>
+            <div class="text-xl font-bold" id="s-word">mother</div>
+          </div>
+        </div>
+
+        <!-- Image hint -->
+        <img class="w-full h-40 object-cover rounded-xl mb-4 opacity-70" id="s-image" alt="" crossorigin="">
+
+        <!-- Sentence with blank -->
+        <div class="bg-gray-50 rounded-xl p-5 mb-4">
+          <div class="text-xs text-gray-400 mb-1">📖 Điền từ vào chỗ trống:</div>
+          <div class="text-lg font-medium text-gray-800" id="s-blank-sentence">
+            My <span class="inline-block border-b-2 border-brand-400 min-w-[80px] text-brand-600 font-bold" contenteditable="false">______</span> is a teacher.
+          </div>
+          <div class="text-sm text-gray-400 mt-1 italic" id="s-hint-vi">Mẹ tôi là giáo viên.</div>
+        </div>
+
+        <!-- Input -->
+        <div class="flex gap-2 mb-4">
+          <input type="text" id="s-answer-input" class="flex-1 px-4 py-2.5 border border-gray-200 rounded-xl focus:outline-none focus:border-brand-400 focus:ring-2 focus:ring-brand-100 text-lg" placeholder="Gõ câu trả lời..." autocomplete="off">
+          <button onclick="checkSentenceAnswer()" class="px-5 py-2.5 bg-brand-600 hover:bg-brand-700 text-white font-medium rounded-xl transition">Kiểm tra</button>
+        </div>
+
+        <!-- Result -->
+        <div id="s-result" class="hidden text-sm mb-4"></div>
+
+        <!-- Your own sentence -->
+        <div class="border-t border-gray-100 pt-4 mt-2">
+          <div class="text-xs text-gray-400 mb-2">✏️ Hoặc tự viết câu của bạn với từ này:</div>
+          <div class="flex gap-2">
+            <input type="text" id="s-own-sentence" class="flex-1 px-3 py-2 border border-gray-200 rounded-lg focus:outline-none focus:border-green-400 text-sm" placeholder="Viết câu của bạn..." autocomplete="off">
+            <button onclick="saveOwnSentence()" class="px-4 py-2 bg-green-500 hover:bg-green-600 text-white font-medium rounded-lg text-sm transition">Lưu</button>
+          </div>
+          <div id="s-own-result" class="hidden text-xs text-green-600 mt-1">✅ Đã lưu câu của bạn!</div>
+        </div>
+
+        <!-- Actions -->
+        <div class="flex gap-2 mt-6">
+          <button onclick="nextSentenceCard()" class="flex-1 px-4 py-2.5 bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium rounded-xl transition">Câu tiếp theo →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script>
 // ═══════════════════════════════════════════════════════
 // DATA
@@ -434,6 +503,7 @@ function showPage(page) {
   if (page === 'stats') renderStats();
   if (page === 'home') renderHomeUnits();
   if (page === 'study') renderStudyUnits('all');
+  if (page === 'sentence') initSentencePractice();
   updateHomeHero();
 }
 
@@ -900,6 +970,131 @@ function resetProgress() {
     renderStats();
     updateHomeHero();
   }
+}
+
+// ═══════════════════════════════════════════════════════
+// SENTENCE PRACTICE
+// ═══════════════════════════════════════════════════════
+
+let sCards = [];
+let sIdx = 0;
+let sLevel = 'all';
+
+function initSentencePractice() {
+  // Build card list from curriculum
+  sCards = [];
+  CURRICULUM.units.forEach(u => {
+    u.cards.forEach(c => {
+      sCards.push({...c, unitLabel: `${u.id.startsWith('a1')?'A1':'A2'} · ${u.title}`});
+    });
+  });
+  filterSentenceLevel(sLevel);
+}
+
+function filterSentenceLevel(level) {
+  sLevel = level;
+  // Update active button
+  document.querySelectorAll('.level-s-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.level === level);
+    b.classList.toggle('bg-brand-600', b.dataset.level === level);
+    b.classList.toggle('text-white', b.dataset.level === level);
+    b.classList.toggle('bg-gray-100', b.dataset.level !== level);
+    b.classList.toggle('text-gray-700', b.dataset.level !== level);
+  });
+  const filtered = sLevel === 'all'
+    ? sCards
+    : sCards.filter(c => c.unit_id.startsWith(sLevel));
+  if (filtered.length === 0) return;
+  sIdx = Math.floor(Math.random() * filtered.length);
+  showSentenceCard(filtered);
+}
+
+function showSentenceCard(cards) {
+  const card = cards[sIdx];
+  if (!card) return;
+
+  document.getElementById('s-word').textContent = card.word;
+  document.getElementById('s-unit-label').textContent = card.unitLabel;
+
+  // Load image
+  const img = document.getElementById('s-image');
+  if (card.image_url) {
+    img.src = card.image_url;
+    img.onerror = () => { img.style.display = 'none'; };
+  } else {
+    img.style.display = 'none';
+  }
+
+  // Build blank sentence
+  const word = card.word;
+  const sentence = card.example || '';
+  const hintVi = card.example_vi || '';
+
+  // Replace word with blank (case-insensitive)
+  const blanked = sentence.replace(new RegExp(word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi'), '______');
+  document.getElementById('s-blank-sentence').innerHTML = blanked;
+  document.getElementById('s-hint-vi').textContent = hintVi || '(không có gợi ý)';
+
+  // Store current word for answer checking
+  document.getElementById('s-blank-sentence').dataset.word = word.toLowerCase();
+  document.getElementById('s-blank-sentence').dataset.fullSentence = sentence;
+
+  // Clear inputs
+  document.getElementById('s-answer-input').value = '';
+  document.getElementById('s-own-sentence').value = '';
+  document.getElementById('s-result').classList.add('hidden');
+  document.getElementById('s-own-result').classList.add('hidden');
+  document.getElementById('s-answer-input').focus();
+}
+
+function checkSentenceAnswer() {
+  const input = document.getElementById('s-answer-input').value.trim().toLowerCase();
+  const word = document.getElementById('s-blank-sentence').dataset.word;
+  const resultEl = document.getElementById('s-result');
+  resultEl.classList.remove('hidden');
+
+  if (!input) {
+    resultEl.innerHTML = '<span class="text-gray-500">✏️ Gõ câu trả lời của bạn!</span>';
+    return;
+  }
+
+  // Check if input contains the target word
+  if (input.includes(word)) {
+    resultEl.innerHTML = `<span class="text-green-600">✅ Đúng! Từ "${word}" có trong câu của bạn.</span>`;
+    // Show full sentence
+    document.getElementById('s-blank-sentence').innerHTML = document.getElementById('s-blank-sentence').dataset.fullSentence;
+  } else {
+    resultEl.innerHTML = `<span class="text-red-500">❌ Câu trả lời chưa đúng. Hãy thử dùng từ "<strong>${word}</strong>" trong câu!</span>
+      <div class="text-gray-400 mt-1">💡 Câu mẫu: ${document.getElementById('s-blank-sentence').dataset.fullSentence}</div>`;
+  }
+}
+
+function saveOwnSentence() {
+  const sentence = document.getElementById('s-own-sentence').value.trim();
+  const word = document.getElementById('s-blank-sentence').dataset.word;
+  const resultEl = document.getElementById('s-own-result');
+
+  if (!sentence) return;
+
+  // Save to localStorage
+  const key = 'gocb2_own_sentences';
+  let saved = JSON.parse(localStorage.getItem(key) || '{}');
+  if (!saved[word]) saved[word] = [];
+  saved[word].push({sentence, date: new Date().toISOString().slice(0,10)});
+  localStorage.setItem(key, JSON.stringify(saved));
+
+  resultEl.classList.remove('hidden');
+  setTimeout(() => resultEl.classList.add('hidden'), 3000);
+}
+
+function nextSentenceCard() {
+  // Get current filtered list
+  const filtered = sLevel === 'all'
+    ? sCards
+    : sCards.filter(c => c.unit_id.startsWith(sLevel));
+  if (filtered.length === 0) return;
+  sIdx = (sIdx + 1) % filtered.length;
+  showSentenceCard(filtered);
 }
 
 // ═══════════════════════════════════════════════════════
