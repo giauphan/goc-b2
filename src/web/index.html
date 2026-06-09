@@ -838,11 +838,15 @@ function showCard() {
   document.getElementById('flashcard').classList.remove('flipped');
   document.getElementById('card-word').textContent = card.word;
 
-  // Load illustration from local SVGs
-  const imgName = (card.word || '')
-    .toLowerCase()
-    .replace(/[^a-z0-9]/g, '_') + '.svg';
-  document.getElementById('card-image').src = `/assets/images/${imgName}`;
+  // Load image: try real photo URL first, fallback to local SVG
+  const img = document.getElementById('card-image');
+  const svgFallback = `/assets/images/${(card.word || '').toLowerCase().replace(/[^a-z0-9]/g, '_')}.svg`;
+  if (card.image_url) {
+    img.src = card.image_url;
+    img.onerror = () => { img.src = svgFallback; img.onerror = null; };
+  } else {
+    img.src = svgFallback;
+  }
 
   // Pre-fill back
   document.getElementById('card-vi').textContent = card.vi;
