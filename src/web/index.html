@@ -343,8 +343,8 @@
 <!-- ════════════════════════════════════════════════════ -->
 <div id="page-sentence" class="page">
   <div class="max-w-2xl mx-auto px-4 pt-24 pb-12">
-    <h2 class="text-2xl font-bold mb-1">✍️ Luyện viết câu</h2>
-    <p class="text-gray-500 text-sm mb-6">Điền từ vào chỗ trống hoặc tự viết câu của bạn.</p>
+    <h2 class="text-2xl font-bold mb-1">📐 Cấu trúc câu</h2>
+    <p class="text-gray-500 text-sm mb-6">Học cách đặt câu với từ vựng theo mẫu cấu trúc.</p>
 
     <!-- Level filter -->
     <div class="flex gap-2 mb-4">
@@ -353,54 +353,64 @@
       <button class="level-s-btn px-4 py-1.5 rounded-full text-sm font-medium transition" data-level="a2" onclick="filterSentenceLevel('a2')">A2</button>
     </div>
 
-    <!-- Sentence practice area -->
     <div id="sentence-area">
       <div class="bg-white rounded-2xl border border-gray-100 p-6 md:p-8 shadow-sm">
 
-        <!-- Word display -->
-        <div class="flex items-center gap-3 mb-4">
-          <span class="text-2xl">📝</span>
+        <!-- Word header -->
+        <div class="flex items-center gap-3 mb-5 pb-4 border-b border-gray-100">
+          <span class="text-3xl">📝</span>
           <div>
             <span class="text-xs text-gray-400" id="s-unit-label">A1 · Family</span>
             <div class="text-xl font-bold" id="s-word">mother</div>
+            <span class="text-xs text-gray-400" id="s-pos">noun</span>
           </div>
         </div>
 
         <!-- Image hint -->
-        <img class="w-full h-40 object-cover rounded-xl mb-4 opacity-70" id="s-image" alt="" crossorigin="">
+        <img class="w-full h-36 object-cover rounded-xl mb-4 opacity-60" id="s-image" alt="" crossorigin="">
 
-        <!-- Sentence with blank -->
-        <div class="bg-gray-50 rounded-xl p-5 mb-4">
-          <div class="text-xs text-gray-400 mb-1">📖 Điền từ vào chỗ trống:</div>
-          <div class="text-lg font-medium text-gray-800" id="s-blank-sentence">
-            My <span class="inline-block border-b-2 border-brand-400 min-w-[80px] text-brand-600 font-bold" contenteditable="false">______</span> is a teacher.
+        <!-- ═══ PATTERN SECTION ═══ -->
+        <div class="bg-gradient-to-br from-indigo-50 to-blue-50 border border-indigo-100 rounded-xl p-5 mb-4">
+          <div class="text-xs font-semibold text-indigo-600 uppercase tracking-wider mb-2">📐 Cấu trúc câu</div>
+          <div class="text-base md:text-lg font-mono font-bold text-indigo-900 leading-relaxed" id="s-pattern">
+            [Subject] + <span class="text-brand-600 bg-brand-50 px-1.5 rounded">[noun]</span> + [verb] + ...
           </div>
-          <div class="text-sm text-gray-400 mt-1 italic" id="s-hint-vi">Mẹ tôi là giáo viên.</div>
+          <div class="text-xs text-gray-400 mt-1 italic">Dùng <strong class="text-brand-600">từ này</strong> trong cấu trúc trên</div>
         </div>
 
-        <!-- Input -->
-        <div class="flex gap-2 mb-4">
-          <input type="text" id="s-answer-input" class="flex-1 px-4 py-2.5 border border-gray-200 rounded-xl focus:outline-none focus:border-brand-400 focus:ring-2 focus:ring-brand-100 text-lg" placeholder="Gõ câu trả lời..." autocomplete="off">
-          <button onclick="checkSentenceAnswer()" class="px-5 py-2.5 bg-brand-600 hover:bg-brand-700 text-white font-medium rounded-xl transition">Kiểm tra</button>
+        <!-- ═══ EXAMPLE ═══ -->
+        <div class="bg-green-50 border border-green-100 rounded-xl p-4 mb-4">
+          <div class="text-xs font-semibold text-green-700 uppercase tracking-wider mb-1">✅ Ví dụ</div>
+          <div class="text-base font-medium text-gray-800" id="s-example">My mother is a teacher.</div>
+          <div class="text-sm text-gray-400 mt-1" id="s-example-vi">Mẹ tôi là giáo viên.</div>
         </div>
 
-        <!-- Result -->
-        <div id="s-result" class="hidden text-sm mb-4"></div>
+        <!-- ═══ PATTERN BREAKDOWN ═══ -->
+        <div class="bg-gray-50 rounded-xl p-4 mb-4">
+          <div class="text-xs font-semibold text-gray-600 uppercase tracking-wider mb-2">🔍 Phân tích</div>
+          <div id="s-breakdown" class="space-y-1 text-sm text-gray-700">
+            <div><span class="text-indigo-600 font-medium">[My]</span> = sở hữu</div>
+            <div><span class="text-brand-600 font-medium bg-brand-50 px-1 rounded">[mother]</span> = danh từ (từ vựng của bạn)</div>
+            <div><span class="text-indigo-600 font-medium">[is]</span> = động từ to be</div>
+            <div><span class="text-indigo-600 font-medium">[a teacher]</span> = bổ ngữ</div>
+          </div>
+        </div>
 
-        <!-- Your own sentence -->
-        <div class="border-t border-gray-100 pt-4 mt-2">
-          <div class="text-xs text-gray-400 mb-2">✏️ Hoặc tự viết câu của bạn với từ này:</div>
+        <!-- ═══ USER PRACTICE ═══ -->
+        <div class="border-t border-gray-100 pt-4">
+          <div class="text-xs font-semibold text-gray-600 mb-2">✏️ Thực hành — Viết câu của bạn theo cấu trúc trên:</div>
+          <div class="flex gap-2 mb-2">
+            <input type="text" id="s-own-sentence" class="flex-1 px-4 py-2.5 border border-gray-200 rounded-xl focus:outline-none focus:border-brand-400 focus:ring-2 focus:ring-brand-100 text-base" placeholder='VD: My mother is a doctor.' autocomplete="off">
+            <button onclick="checkUserSentence()" class="px-5 py-2.5 bg-brand-600 hover:bg-brand-700 text-white font-medium rounded-xl transition">Kiểm tra</button>
+          </div>
+          <div id="s-result" class="hidden text-sm mb-2"></div>
           <div class="flex gap-2">
-            <input type="text" id="s-own-sentence" class="flex-1 px-3 py-2 border border-gray-200 rounded-lg focus:outline-none focus:border-green-400 text-sm" placeholder="Viết câu của bạn..." autocomplete="off">
-            <button onclick="saveOwnSentence()" class="px-4 py-2 bg-green-500 hover:bg-green-600 text-white font-medium rounded-lg text-sm transition">Lưu</button>
+            <button onclick="saveUserSentence()" class="text-xs text-green-600 hover:text-green-700">💾 Lưu câu này</button>
+            <span class="text-gray-300">|</span>
+            <button onclick="nextSentenceCard()" class="text-xs text-brand-600 hover:text-brand-700">Câu tiếp theo →</button>
           </div>
-          <div id="s-own-result" class="hidden text-xs text-green-600 mt-1">✅ Đã lưu câu của bạn!</div>
         </div>
 
-        <!-- Actions -->
-        <div class="flex gap-2 mt-6">
-          <button onclick="nextSentenceCard()" class="flex-1 px-4 py-2.5 bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium rounded-xl transition">Câu tiếp theo →</button>
-        </div>
       </div>
     </div>
   </div>
@@ -1013,8 +1023,14 @@ function showSentenceCard(cards) {
   const card = cards[sIdx];
   if (!card) return;
 
-  document.getElementById('s-word').textContent = card.word;
+  const word = card.word;
+  const pos = card.part_of_speech || 'noun';
+  const sentence = card.example || '';
+  const hintVi = card.example_vi || '';
+
+  document.getElementById('s-word').textContent = word;
   document.getElementById('s-unit-label').textContent = card.unitLabel;
+  document.getElementById('s-pos').textContent = pos;
 
   // Load image
   const img = document.getElementById('s-image');
@@ -1025,70 +1041,148 @@ function showSentenceCard(cards) {
     img.style.display = 'none';
   }
 
-  // Build blank sentence
-  const word = card.word;
-  const sentence = card.example || '';
-  const hintVi = card.example_vi || '';
+  // Generate sentence pattern based on POS
+  const patternData = getPattern(word, pos, sentence);
+  document.getElementById('s-pattern').innerHTML = patternData.pattern;
+  document.getElementById('s-pattern').dataset.word = word.toLowerCase();
 
-  // Replace word with blank (case-insensitive)
-  const blanked = sentence.replace(new RegExp(word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi'), '______');
-  document.getElementById('s-blank-sentence').innerHTML = blanked;
-  document.getElementById('s-hint-vi').textContent = hintVi || '(không có gợi ý)';
+  // Show example
+  document.getElementById('s-example').textContent = sentence || '(chưa có ví dụ)';
+  document.getElementById('s-example-vi').textContent = hintVi || '';
 
-  // Store current word for answer checking
-  document.getElementById('s-blank-sentence').dataset.word = word.toLowerCase();
-  document.getElementById('s-blank-sentence').dataset.fullSentence = sentence;
+  // Show breakdown
+  document.getElementById('s-breakdown').innerHTML = patternData.breakdown;
 
   // Clear inputs
-  document.getElementById('s-answer-input').value = '';
   document.getElementById('s-own-sentence').value = '';
   document.getElementById('s-result').classList.add('hidden');
-  document.getElementById('s-own-result').classList.add('hidden');
-  document.getElementById('s-answer-input').focus();
+  document.getElementById('s-own-sentence').focus();
 }
 
-function checkSentenceAnswer() {
-  const input = document.getElementById('s-answer-input').value.trim().toLowerCase();
-  const word = document.getElementById('s-blank-sentence').dataset.word;
+function getPattern(word, pos, sentence) {
+  const w = word;
+  const patterns = {
+    noun: {
+      pattern: `[Possessive] + <span class="text-brand-600 bg-brand-50 px-1.5 rounded font-bold">[${w}]</span> + [verb] + ...`,
+      breakdown: `<div><span class="text-indigo-600 font-medium">[Possessive]</span> = my / your / his / her / the / a(n)</div>
+<div><span class="text-brand-600 font-medium bg-brand-50 px-1 rounded">[${w}]</span> = danh từ (từ vựng của bạn)</div>
+<div><span class="text-indigo-600 font-medium">[verb]</span> = động từ: is / works / has ...</div>
+<div class="text-gray-400 text-xs mt-1">💡 Dùng <strong>${w}</strong> như chủ ngữ hoặc tân ngữ trong câu.</div>`
+    },
+    verb: {
+      pattern: `[Subject] + <span class="text-brand-600 bg-brand-50 px-1.5 rounded font-bold">[${w}]</span> + [object]`,
+      breakdown: `<div><span class="text-indigo-600 font-medium">[Subject]</span> = I / You / He / She / It / We / They</div>
+<div><span class="text-brand-600 font-medium bg-brand-50 px-1 rounded">[${w}]</span> = động từ (hành động)</div>
+<div><span class="text-indigo-600 font-medium">[object]</span> = tân ngữ: danh từ / cụm danh từ</div>
+<div class="text-gray-400 text-xs mt-1">💡 Với He/She/It → <strong>${w}s</strong> / ${w}es (thêm s/es)</div>`
+    },
+    adjective: {
+      pattern: `[Subject] + [to be] + <span class="text-brand-600 bg-brand-50 px-1.5 rounded font-bold">[${w}]</span>`,
+      breakdown: `<div><span class="text-indigo-600 font-medium">[Subject]</span> = I / It / The ${w} ...</div>
+<div><span class="text-indigo-600 font-medium">[to be]</span> = am / is / are / was / were</div>
+<div><span class="text-brand-600 font-medium bg-brand-50 px-1 rounded">[${w}]</span> = tính từ (miêu tả)</div>
+<div class="text-gray-400 text-xs mt-1">💡 Hoặc: [Subject] + [to be] + [adverb] + <strong>${w}</strong></div>`
+    },
+    adverb: {
+      pattern: `[Subject] + [verb] + <span class="text-brand-600 bg-brand-50 px-1.5 rounded font-bold">[${w}]</span>`,
+      breakdown: `<div><span class="text-indigo-600 font-medium">[Subject]</span> = I / He / The car ...</div>
+<div><span class="text-indigo-600 font-medium">[verb]</span> = động từ: runs / drives / speaks ...</div>
+<div><span class="text-brand-600 font-medium bg-brand-50 px-1 rounded">[${w}]</span> = trạng từ (bổ nghĩa cho động từ)</div>`
+    },
+    greeting: {
+      pattern: `<span class="text-brand-600 bg-brand-50 px-1.5 rounded font-bold">[${w}]</span> + [phrase]`,
+      breakdown: `<div><span class="text-brand-600 font-medium bg-brand-50 px-1 rounded">[${w}]</span> = lời chào / cụm từ giao tiếp</div>
+<div><span class="text-indigo-600 font-medium">[phrase]</span> = phần còn lại của câu</div>`
+    },
+    phrase: {
+      pattern: `<span class="text-brand-600 bg-brand-50 px-1.5 rounded font-bold">[${w}]</span> + [rest of sentence]`,
+      breakdown: `<div><span class="text-brand-600 font-medium bg-brand-50 px-1 rounded">[${w}]</span> = cụm từ cố định</div>
+<div><span class="text-indigo-600 font-medium">[rest]</span> = phần còn lại</div>`
+    },
+    'verb phrase': {
+      pattern: `[Subject] + [aux] + <span class="text-brand-600 bg-brand-50 px-1.5 rounded font-bold">[${w}]</span> + [object]`,
+      breakdown: `<div><span class="text-indigo-600 font-medium">[Subject]</span> = I / You / He / She</div>
+<div><span class="text-indigo-600 font-medium">[aux]</span> = trợ động từ: can / will / do / have ...</div>
+<div><span class="text-brand-600 font-medium bg-brand-50 px-1 rounded">[${w}]</span> = cụm động từ</div>
+<div><span class="text-indigo-600 font-medium">[object]</span> = tân ngữ</div>`
+    },
+    'noun/verb': {
+      pattern: `[Subject] + <span class="text-brand-600 bg-brand-50 px-1.5 rounded font-bold">[${w}]</span> + [object]`,
+      breakdown: `<div><span class="text-brand-600 font-medium bg-brand-50 px-1 rounded">[${w}]</span> có thể là danh từ hoặc động từ</div>
+<div class="text-gray-400 text-xs mt-1">💡 Danh từ: [my/her/the] + <strong>${w}</strong></div>
+<div class="text-gray-400 text-xs mt-1">💡 Động từ: [Subject] + <strong>${w}</strong> + [object]</div>`
+    }
+  };
+
+  // Try exact POS match, fallback to generic
+  let p = patterns[pos] || patterns.noun;
+
+  // Try to extract a more specific pattern from the example
+  if (sentence) {
+    const lower = sentence.toLowerCase();
+    // Question pattern?
+    if (lower.startsWith('do ') || lower.startsWith('does ') || lower.startsWith('did ') || lower.startsWith('have ') || lower.startsWith('has ') || lower.startsWith('are ') || lower.startsWith('is ') || lower.startsWith('can ') || lower.startsWith('will ')) {
+      p = {
+        pattern: `[Question word] + [subject] + <span class="text-brand-600 bg-brand-50 px-1.5 rounded font-bold">[${w}]</span> + [rest]?`,
+        breakdown: `<div><span class="text-indigo-600 font-medium">[Question word]</span> = Do / Does / Did / Have / Are / Can ...</div>
+<div><span class="text-indigo-600 font-medium">[subject]</span> = you / he / she / they ...</div>
+<div><span class="text-brand-600 font-medium bg-brand-50 px-1 rounded">[${w}]</span> = động từ chính</div>
+<div><span class="text-indigo-600 font-medium">[rest]?</span> = phần còn lại + dấu hỏi</div>`
+      };
+    }
+    // Past tense?
+    else if (lower.includes('yesterday') || lower.includes('last ') || lower.includes('ago') || lower.includes('ed ')) {
+      p = {
+        pattern: `[Subject] + <span class="text-brand-600 bg-brand-50 px-1.5 rounded font-bold">[${w}ed]</span> + [object] (past)`,
+        breakdown: `<div><span class="text-indigo-600 font-medium">[Subject]</span> = I / He / She / They</div>
+<div><span class="text-brand-600 font-medium bg-brand-50 px-1 rounded">[${w}ed]</span> = động từ chia quá khứ</div>
+<div><span class="text-indigo-600 font-medium">[object]</span> = tân ngữ</div>
+<div class="text-gray-400 text-xs mt-1">💡 Dùng thì quá khứ với: yesterday, last week, ago</div>`
+      };
+    }
+  }
+
+  return p;
+}
+
+function checkUserSentence() {
+  const sentence = document.getElementById('s-own-sentence').value.trim();
+  const word = document.getElementById('s-pattern').dataset.word;
   const resultEl = document.getElementById('s-result');
   resultEl.classList.remove('hidden');
 
-  if (!input) {
-    resultEl.innerHTML = '<span class="text-gray-500">✏️ Gõ câu trả lời của bạn!</span>';
+  if (!sentence) {
+    resultEl.innerHTML = '<span class="text-gray-500">✏️ Viết một câu có sử dụng từ này!</span>';
     return;
   }
 
-  // Check if input contains the target word
-  if (input.includes(word)) {
-    resultEl.innerHTML = `<span class="text-green-600">✅ Đúng! Từ "${word}" có trong câu của bạn.</span>`;
-    // Show full sentence
-    document.getElementById('s-blank-sentence').innerHTML = document.getElementById('s-blank-sentence').dataset.fullSentence;
+  // Check if the word is in the sentence
+  const regex = new RegExp('\\b' + word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\b', 'i');
+  if (regex.test(sentence)) {
+    resultEl.innerHTML = `<span class="text-green-600">✅ Tốt! Câu của bạn có dùng từ "<strong>${word}</strong>"</span>`;
   } else {
-    resultEl.innerHTML = `<span class="text-red-500">❌ Câu trả lời chưa đúng. Hãy thử dùng từ "<strong>${word}</strong>" trong câu!</span>
-      <div class="text-gray-400 mt-1">💡 Câu mẫu: ${document.getElementById('s-blank-sentence').dataset.fullSentence}</div>`;
+    resultEl.innerHTML = `<span class="text-amber-600">⚠️ Câu của bạn chưa có từ "<strong>${word}</strong>". Hãy thử lại!</span>`;
   }
 }
 
-function saveOwnSentence() {
+function saveUserSentence() {
   const sentence = document.getElementById('s-own-sentence').value.trim();
-  const word = document.getElementById('s-blank-sentence').dataset.word;
-  const resultEl = document.getElementById('s-own-result');
-
+  const word = document.getElementById('s-pattern').dataset.word;
   if (!sentence) return;
 
-  // Save to localStorage
   const key = 'gocb2_own_sentences';
-  let saved = JSON.parse(localStorage.getItem(key) || '{}');
+  const saved = JSON.parse(localStorage.getItem(key) || '{}');
   if (!saved[word]) saved[word] = [];
   saved[word].push({sentence, date: new Date().toISOString().slice(0,10)});
   localStorage.setItem(key, JSON.stringify(saved));
-
+  
+  const resultEl = document.getElementById('s-result');
   resultEl.classList.remove('hidden');
-  setTimeout(() => resultEl.classList.add('hidden'), 3000);
+  resultEl.innerHTML = `<span class="text-green-600">💾 Đã lưu câu của bạn!</span>`;
+  setTimeout(() => resultEl.classList.add('hidden'), 2000);
 }
 
 function nextSentenceCard() {
-  // Get current filtered list
   const filtered = sLevel === 'all'
     ? sCards
     : sCards.filter(c => c.unit_id.startsWith(sLevel));
