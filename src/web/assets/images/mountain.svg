@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 100" width="320" height="200">
+<rect width="160" height="100" rx="8" fill="#FAFAFA"/>
+<rect x="0" y="0" width="160" height="6" fill="#22C55E" opacity="0.8"/>
+<polygon points="20,80 55,20 90,80" fill="#22C55E"/>
+<polygon points="55,80 85,30 120,80" fill="#16A34A"/>
+<polygon points="40,80 68,45 95,80" fill="#15803D"/>
+<circle cx="55" cy="20" r="4" fill="#fff" opacity="0.8"/>
+<circle cx="85" cy="30" r="3" fill="#fff" opacity="0.8"/>
+<text x="80" y="95" text-anchor="middle" font-size="11" fill="#6B7280" font-family="sans-serif">mountain</text>
+</svg>

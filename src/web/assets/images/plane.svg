@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 100" width="320" height="200">
+<rect width="160" height="100" rx="8" fill="#FAFAFA"/>
+<rect x="0" y="0" width="160" height="6" fill="#F97316" opacity="0.8"/>
+<ellipse cx="80" cy="55" rx="40" ry="8" fill="#E5E7EB" stroke="#9CA3AF" stroke-width="1.5"/>
+<polygon points="40,55 60,48 60,62" fill="#E5E7EB" stroke="#9CA3AF" stroke-width="1"/>
+<polygon points="80,55 80,35 100,55 80,75" fill="#E5E7EB" stroke="#9CA3AF" stroke-width="1"/>
+<text x="80" y="95" text-anchor="middle" font-size="11" fill="#6B7280" font-family="sans-serif">plane</text>
+</svg>

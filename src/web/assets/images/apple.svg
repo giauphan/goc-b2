@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 100" width="320" height="200">
+<rect width="160" height="100" rx="8" fill="#FAFAFA"/>
+<rect x="0" y="0" width="160" height="6" fill="#10B981" opacity="0.8"/>
+<ellipse cx="80" cy="55" rx="25" ry="28" fill="#EF4444"/>
+<path d="M80 27 Q80 18 80 27" stroke="#4ADE80" stroke-width="3" fill="none"/>
+<ellipse cx="68" cy="45" rx="5" ry="6" fill="#FCA5A5" opacity="0.6"/>
+<text x="80" y="95" text-anchor="middle" font-size="11" fill="#6B7280" font-family="sans-serif">apple</text>
+</svg>

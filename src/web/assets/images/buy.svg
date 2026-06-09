@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 100" width="320" height="200">
+<rect width="160" height="100" rx="8" fill="#FAFAFA"/>
+<rect x="0" y="0" width="160" height="6" fill="#EC4899" opacity="0.8"/>
+<rect x="50" y="35" width="60" height="55" rx="3" fill="#FBD38D"/>
+<polygon points="45,38 80,15 115,38" fill="#EF4444"/>
+<rect x="70" y="55" width="20" height="20" rx="2" fill="#7C3AED" opacity="0.8"/>
+<rect x="58" y="65" width="8" height="12" fill="#92400E"/>
+<rect x="56" y="55" width="8" height="8" fill="#3B82F6" opacity="0.6"/>
+<rect x="94" y="55" width="8" height="8" fill="#3B82F6" opacity="0.6"/>
+<text x="80" y="95" text-anchor="middle" font-size="11" fill="#6B7280" font-family="sans-serif">buy</text>
+</svg>

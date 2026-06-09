@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 100" width="320" height="200">
+<rect width="160" height="100" rx="8" fill="#FAFAFA"/>
+<rect x="0" y="0" width="160" height="6" fill="#10B981" opacity="0.8"/>
+<path d="M60 70 Q80 25 110 45 Q95 50 80 55 Q70 60 60 70Z" fill="#FDE047"/>
+<circle cx="65" cy="68" r="4" fill="#78350F" opacity="0.5"/>
+<text x="80" y="95" text-anchor="middle" font-size="11" fill="#6B7280" font-family="sans-serif">banana</text>
+</svg>

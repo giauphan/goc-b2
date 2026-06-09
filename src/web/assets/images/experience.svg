@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 100" width="320" height="200">
+<rect width="160" height="100" rx="8" fill="#FAFAFA"/>
+<rect x="0" y="0" width="160" height="6" fill="#A855F7" opacity="0.8"/>
+<ellipse cx="70" cy="68" rx="20" ry="14" fill="#A8A29E"/>
+<circle cx="55" cy="48" r="13" fill="#A8A29E"/>
+<polygon points="45,35 50,42 55,38" fill="#A8A29E"/>
+<polygon points="58,35 55,42 52,38" fill="#A8A29E"/>
+<circle cx="51" cy="46" r="1.5" fill="#1F2937"/>
+<circle cx="58" cy="46" r="1.5" fill="#1F2937"/>
+<text x="80" y="95" text-anchor="middle" font-size="11" fill="#6B7280" font-family="sans-serif">experience</text>
+</svg>
