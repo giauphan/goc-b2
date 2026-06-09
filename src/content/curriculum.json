@@ -4,12 +4,12 @@
     "level": "A1–A2",
     "cefr_description": "Can understand and use familiar everyday expressions and very basic phrases.",
     "total_units": 10,
-    "total_cards": 250,
-    "description": "250 từ vựng (10 units) — từ mất gốc đến A2. Cho người Việt.",
+    "total_cards": 355,
+    "description": "355 từ vựng (10 units) — từ mất gốc đến A2. Cho người Việt.",
     "a1_units": 5,
-    "a1_cards": 125,
+    "a1_cards": 178,
     "a2_units": 5,
-    "a2_cards": 125
+    "a2_cards": 177
   },
   "units": [
     {
@@ -267,6 +267,138 @@
           "part_of_speech": "verb",
           "image_hint": "heart symbol",
           "image_url": "https://loremflickr.com/400/300/love,heart?lock=4455"
+        },
+        {
+          "word": "grandmother",
+          "phonetic": "/ˈɡrænmʌðər/",
+          "vi": "bà",
+          "example": "My grandmother lives with us.",
+          "example_vi": "Bà tôi sống với chúng tôi.",
+          "part_of_speech": "noun",
+          "image_hint": "grandmother and grandchild",
+          "unit_id": "a1-family",
+          "image_url": "https://loremflickr.com/400/300/grandmother,grandmother?lock=8530"
+        },
+        {
+          "word": "grandfather",
+          "phonetic": "/ˈɡrænfɑːðər/",
+          "vi": "ông",
+          "example": "My grandfather is 70 years old.",
+          "example_vi": "Ông tôi 70 tuổi.",
+          "part_of_speech": "noun",
+          "image_hint": "grandfather smiling",
+          "unit_id": "a1-family",
+          "image_url": "https://loremflickr.com/400/300/grandfather,grandfather?lock=4390"
+        },
+        {
+          "word": "aunt",
+          "phonetic": "/ænt/",
+          "vi": "dì / cô",
+          "example": "My aunt lives in Hanoi.",
+          "example_vi": "Dì tôi sống ở Hà Nội.",
+          "part_of_speech": "noun",
+          "image_hint": "aunt with family",
+          "unit_id": "a1-family",
+          "image_url": "https://loremflickr.com/400/300/aunt,aunt?lock=1497"
+        },
+        {
+          "word": "uncle",
+          "phonetic": "/ˈʌŋkəl/",
+          "vi": "chú / bác",
+          "example": "My uncle is a doctor.",
+          "example_vi": "Chú tôi là bác sĩ.",
+          "part_of_speech": "noun",
+          "image_hint": "uncle portrait",
+          "unit_id": "a1-family",
+          "image_url": "https://loremflickr.com/400/300/uncle,uncle?lock=8184"
+        },
+        {
+          "word": "cousin",
+          "phonetic": "/ˈkʌzən/",
+          "vi": "anh/chị/em họ",
+          "example": "My cousin is my best friend.",
+          "example_vi": "Anh họ tôi là bạn thân nhất.",
+          "part_of_speech": "noun",
+          "image_hint": "cousins together",
+          "unit_id": "a1-family",
+          "image_url": "https://loremflickr.com/400/300/cousin,cousins?lock=6456"
+        },
+        {
+          "word": "parent",
+          "phonetic": "/ˈpɛrənt/",
+          "vi": "bố mẹ",
+          "example": "My parents are teachers.",
+          "example_vi": "Bố mẹ tôi là giáo viên.",
+          "part_of_speech": "noun",
+          "image_hint": "parents with children",
+          "unit_id": "a1-family",
+          "image_url": "https://loremflickr.com/400/300/parent,parents?lock=5784"
+        },
+        {
+          "word": "daughter",
+          "phonetic": "/ˈdɔːtər/",
+          "vi": "con gái",
+          "example": "My daughter is five years old.",
+          "example_vi": "Con gái tôi 5 tuổi.",
+          "part_of_speech": "noun",
+          "image_hint": "daughter smiling",
+          "unit_id": "a1-family",
+          "image_url": "https://loremflickr.com/400/300/daughter,daughter?lock=546"
+        },
+        {
+          "word": "son",
+          "phonetic": "/sʌn/",
+          "vi": "con trai",
+          "example": "My son likes football.",
+          "example_vi": "Con trai tôi thích bóng đá.",
+          "part_of_speech": "noun",
+          "image_hint": "son playing",
+          "unit_id": "a1-family",
+          "image_url": "https://loremflickr.com/400/300/son,son?lock=2811"
+        },
+        {
+          "word": "husband",
+          "phonetic": "/ˈhʌzbənd/",
+          "vi": "chồng",
+          "example": "My husband cooks dinner.",
+          "example_vi": "Chồng tôi nấu bữa tối.",
+          "part_of_speech": "noun",
+          "image_hint": "husband cooking",
+          "unit_id": "a1-family",
+          "image_url": "https://loremflickr.com/400/300/husband,husband?lock=6733"
+        },
+        {
+          "word": "wife",
+          "phonetic": "/waɪf/",
+          "vi": "vợ",
+          "example": "My wife works in a hospital.",
+          "example_vi": "Vợ tôi làm việc ở bệnh viện.",
+          "part_of_speech": "noun",
+          "image_hint": "wife at work",
+          "unit_id": "a1-family",
+          "image_url": "https://loremflickr.com/400/300/wife,wife?lock=4962"
+        },
+        {
+          "word": "neighbor",
+          "phonetic": "/ˈneɪbər/",
+          "vi": "hàng xóm",
+          "example": "Our neighbor is very friendly.",
+          "example_vi": "Hàng xóm của chúng tôi rất thân thiện.",
+          "part_of_speech": "noun",
+          "image_hint": "neighbor waving",
+          "unit_id": "a1-family",
+          "image_url": "https://loremflickr.com/400/300/neighbor,neighbor?lock=1335"
+        },
+        {
+          "word": "baby",
+          "phonetic": "/ˈbeɪbi/",
+          "vi": "em bé",
+          "example": "The baby is crying.",
+          "example_vi": "Em bé đang khóc.",
+          "part_of_speech": "noun",
+          "image_hint": "cute baby",
+          "unit_id": "a1-family",
+          "image_url": "https://loremflickr.com/400/300/baby,cute?lock=4182"
         }
       ]
     },
@@ -525,6 +657,116 @@
           "part_of_speech": "adjective",
           "image_hint": "tired person yawning",
           "image_url": "https://loremflickr.com/400/300/tired,tired?lock=9363"
+        },
+        {
+          "word": "brown",
+          "phonetic": "/braʊn/",
+          "vi": "màu nâu",
+          "example": "I have brown eyes.",
+          "example_vi": "Tôi có mắt màu nâu.",
+          "part_of_speech": "adjective",
+          "image_hint": "brown color",
+          "unit_id": "a1-colors-shapes",
+          "image_url": "https://loremflickr.com/400/300/brown,brown?lock=3242"
+        },
+        {
+          "word": "pink",
+          "phonetic": "/pɪŋk/",
+          "vi": "màu hồng",
+          "example": "The flower is pink.",
+          "example_vi": "Bông hoa màu hồng.",
+          "part_of_speech": "adjective",
+          "image_hint": "pink flower",
+          "unit_id": "a1-colors-shapes",
+          "image_url": "https://loremflickr.com/400/300/pink,pink?lock=8414"
+        },
+        {
+          "word": "purple",
+          "phonetic": "/ˈpɜːrpəl/",
+          "vi": "màu tím",
+          "example": "I like purple shoes.",
+          "example_vi": "Tôi thích giày màu tím.",
+          "part_of_speech": "adjective",
+          "image_hint": "purple color",
+          "unit_id": "a1-colors-shapes",
+          "image_url": "https://loremflickr.com/400/300/purple,purple?lock=5706"
+        },
+        {
+          "word": "orange",
+          "phonetic": "/ˈɒrɪndʒ/",
+          "vi": "màu cam",
+          "example": "The sunset is orange.",
+          "example_vi": "Hoàng hôn màu cam.",
+          "part_of_speech": "adjective",
+          "image_hint": "orange sunset",
+          "unit_id": "a1-colors-shapes",
+          "image_url": "https://loremflickr.com/400/300/orange,orange?lock=3306"
+        },
+        {
+          "word": "gray",
+          "phonetic": "/ɡreɪ/",
+          "vi": "màu xám",
+          "example": "The cat is gray.",
+          "example_vi": "Con mèo màu xám.",
+          "part_of_speech": "adjective",
+          "image_hint": "gray cat",
+          "unit_id": "a1-colors-shapes",
+          "image_url": "https://loremflickr.com/400/300/gray,gray?lock=6368"
+        },
+        {
+          "word": "dark",
+          "phonetic": "/dɑːrk/",
+          "vi": "tối / đậm",
+          "example": "The room is dark.",
+          "example_vi": "Căn phòng tối.",
+          "part_of_speech": "adjective",
+          "image_hint": "dark room",
+          "unit_id": "a1-colors-shapes",
+          "image_url": "https://loremflickr.com/400/300/dark,dark?lock=8125"
+        },
+        {
+          "word": "light",
+          "phonetic": "/laɪt/",
+          "vi": "sáng / nhạt",
+          "example": "The room is light and airy.",
+          "example_vi": "Căn phòng sáng và thoáng.",
+          "part_of_speech": "adjective",
+          "image_hint": "light room",
+          "unit_id": "a1-colors-shapes",
+          "image_url": "https://loremflickr.com/400/300/light,light?lock=3140"
+        },
+        {
+          "word": "pretty",
+          "phonetic": "/ˈprɪti/",
+          "vi": "xinh",
+          "example": "She is very pretty.",
+          "example_vi": "Cô ấy rất xinh.",
+          "part_of_speech": "adjective",
+          "image_hint": "pretty girl",
+          "unit_id": "a1-colors-shapes",
+          "image_url": "https://loremflickr.com/400/300/pretty,pretty?lock=9154"
+        },
+        {
+          "word": "young",
+          "phonetic": "/jʌŋ/",
+          "vi": "trẻ",
+          "example": "She is young and healthy.",
+          "example_vi": "Cô ấy trẻ và khỏe.",
+          "part_of_speech": "adjective",
+          "image_hint": "young person",
+          "unit_id": "a1-colors-shapes",
+          "image_url": "https://loremflickr.com/400/300/young,young?lock=35"
+        },
+        {
+          "word": "long",
+          "phonetic": "/lɒŋ/",
+          "vi": "dài",
+          "example": "She has long hair.",
+          "example_vi": "Cô ấy có tóc dài.",
+          "part_of_speech": "adjective",
+          "image_hint": "long hair",
+          "unit_id": "a1-colors-shapes",
+          "image_url": "https://loremflickr.com/400/300/long,long?lock=7795"
         }
       ]
     },
@@ -783,6 +1025,116 @@
           "part_of_speech": "adjective",
           "image_hint": "full belly",
           "image_url": "https://loremflickr.com/400/300/full,full?lock=6703"
+        },
+        {
+          "word": "cake",
+          "phonetic": "/keɪk/",
+          "vi": "bánh ngọt",
+          "example": "I love chocolate cake.",
+          "example_vi": "Tôi thích bánh sô-cô-la.",
+          "part_of_speech": "noun",
+          "image_hint": "chocolate cake",
+          "unit_id": "a1-food",
+          "image_url": "https://loremflickr.com/400/300/cake,chocolate?lock=3009"
+        },
+        {
+          "word": "ice cream",
+          "phonetic": "/aɪs kriːm/",
+          "vi": "kem",
+          "example": "Ice cream is cold and sweet.",
+          "example_vi": "Kem lạnh và ngọt.",
+          "part_of_speech": "noun",
+          "image_hint": "ice cream cone",
+          "unit_id": "a1-food",
+          "image_url": "https://loremflickr.com/400/300/ice cream,ice?lock=7200"
+        },
+        {
+          "word": "soup",
+          "phonetic": "/suːp/",
+          "vi": "súp / canh",
+          "example": "The soup is hot.",
+          "example_vi": "Súp nóng.",
+          "part_of_speech": "noun",
+          "image_hint": "hot soup",
+          "unit_id": "a1-food",
+          "image_url": "https://loremflickr.com/400/300/soup,hot?lock=3047"
+        },
+        {
+          "word": "salad",
+          "phonetic": "/ˈsæləd/",
+          "vi": "sa-lát",
+          "example": "I eat salad for lunch.",
+          "example_vi": "Tôi ăn sa-lát vào bữa trưa.",
+          "part_of_speech": "noun",
+          "image_hint": "fresh salad",
+          "unit_id": "a1-food",
+          "image_url": "https://loremflickr.com/400/300/salad,fresh?lock=1900"
+        },
+        {
+          "word": "cheese",
+          "phonetic": "/tʃiːz/",
+          "vi": "phô mai",
+          "example": "Cheese is made from milk.",
+          "example_vi": "Phô mai được làm từ sữa.",
+          "part_of_speech": "noun",
+          "image_hint": "cheese slice",
+          "unit_id": "a1-food",
+          "image_url": "https://loremflickr.com/400/300/cheese,cheese?lock=566"
+        },
+        {
+          "word": "butter",
+          "phonetic": "/ˈbʌtər/",
+          "vi": "bơ",
+          "example": "Please pass the butter.",
+          "example_vi": "Làm ơn đưa bơ.",
+          "part_of_speech": "noun",
+          "image_hint": "butter stick",
+          "unit_id": "a1-food",
+          "image_url": "https://loremflickr.com/400/300/butter,butter?lock=5586"
+        },
+        {
+          "word": "pizza",
+          "phonetic": "/ˈpiːtsə/",
+          "vi": "pizza",
+          "example": "We ordered pizza for dinner.",
+          "example_vi": "Chúng tôi gọi pizza cho bữa tối.",
+          "part_of_speech": "noun",
+          "image_hint": "pizza slice",
+          "unit_id": "a1-food",
+          "image_url": "https://loremflickr.com/400/300/pizza,pizza?lock=654"
+        },
+        {
+          "word": "sandwich",
+          "phonetic": "/ˈsænwɪtʃ/",
+          "vi": "bánh sandwich",
+          "example": "I made a sandwich for breakfast.",
+          "example_vi": "Tôi làm sandwich cho bữa sáng.",
+          "part_of_speech": "noun",
+          "image_hint": "sandwich",
+          "unit_id": "a1-food",
+          "image_url": "https://loremflickr.com/400/300/sandwich?lock=1204"
+        },
+        {
+          "word": "juice",
+          "phonetic": "/dʒuːs/",
+          "vi": "nước ép",
+          "example": "I drink orange juice every morning.",
+          "example_vi": "Tôi uống nước cam mỗi sáng.",
+          "part_of_speech": "noun",
+          "image_hint": "orange juice",
+          "unit_id": "a1-food",
+          "image_url": "https://loremflickr.com/400/300/juice,orange?lock=4943"
+        },
+        {
+          "word": "yogurt",
+          "phonetic": "/ˈjoʊɡərt/",
+          "vi": "sữa chua",
+          "example": "I eat yogurt after dinner.",
+          "example_vi": "Tôi ăn sữa chua sau bữa tối.",
+          "part_of_speech": "noun",
+          "image_hint": "yogurt cup",
+          "unit_id": "a1-food",
+          "image_url": "https://loremflickr.com/400/300/yogurt,yogurt?lock=8471"
         }
       ]
     },
@@ -1041,6 +1393,127 @@
           "part_of_speech": "noun",
           "image_hint": "year calendar",
           "image_url": "https://loremflickr.com/400/300/year,year?lock=8444"
+        },
+        {
+          "word": "eleven",
+          "phonetic": "/ɪˈlɛvən/",
+          "vi": "mười một",
+          "example": "There are eleven players.",
+          "example_vi": "Có mười một cầu thủ.",
+          "part_of_speech": "number",
+          "image_hint": "number eleven",
+          "unit_id": "a1-numbers-time",
+          "image_url": "https://loremflickr.com/400/300/eleven,number?lock=8173"
+        },
+        {
+          "word": "twelve",
+          "phonetic": "/twɛlv/",
+          "vi": "mười hai",
+          "example": "The clock shows twelve.",
+          "example_vi": "Đồng hồ chỉ mười hai.",
+          "part_of_speech": "number",
+          "image_hint": "clock at twelve",
+          "unit_id": "a1-numbers-time",
+          "image_url": "https://loremflickr.com/400/300/twelve,clock?lock=7100"
+        },
+        {
+          "word": "thirteen",
+          "phonetic": "/θɜːrˈtiːn/",
+          "vi": "mười ba",
+          "example": "Lucky number thirteen!",
+          "example_vi": "Số mười ba may mắn!",
+          "part_of_speech": "number",
+          "image_hint": "number thirteen",
+          "unit_id": "a1-numbers-time",
+          "image_url": "https://loremflickr.com/400/300/thirteen,number?lock=3144"
+        },
+        {
+          "word": "fifteen",
+          "phonetic": "/fɪfˈtiːn/",
+          "vi": "mười lăm",
+          "example": "I am fifteen years old.",
+          "example_vi": "Tôi mười lăm tuổi.",
+          "part_of_speech": "number",
+          "image_hint": "number fifteen",
+          "unit_id": "a1-numbers-time",
+          "image_url": "https://loremflickr.com/400/300/fifteen,number?lock=5278"
+        },
+        {
+          "word": "twenty",
+          "phonetic": "/ˈtwɛnti/",
+          "vi": "hai mươi",
+          "example": "There are twenty students.",
+          "example_vi": "Có hai mươi học sinh.",
+          "part_of_speech": "number",
+          "image_hint": "number twenty",
+          "unit_id": "a1-numbers-time",
+          "image_url": "https://loremflickr.com/400/300/twenty,number?lock=4618"
+        },
+        {
+          "word": "thirty",
+          "phonetic": "/ˈθɜːrti/",
+          "vi": "ba mươi",
+          "example": "Thirty days in a month.",
+          "example_vi": "Ba mươi ngày trong một tháng.",
+          "part_of_speech": "number",
+          "image_hint": "number thirty",
+          "unit_id": "a1-numbers-time",
+          "image_url": "https://loremflickr.com/400/300/thirty,number?lock=3938"
+        },
+        {
+          "word": "hundred",
+          "phonetic": "/ˈhʌndrəd/",
+          "vi": "một trăm",
+          "example": "One hundred people came.",
+          "example_vi": "Một trăm người đã đến.",
+          "part_of_speech": "number",
+          "image_hint": "number one hundred",
+          "unit_id": "a1-numbers-time",
+          "image_url": "https://loremflickr.com/400/300/hundred,number?lock=4298"
+        },
+        {
+          "word": "first",
+          "phonetic": "/fɜːrst/",
+          "vi": "thứ nhất",
+          "example": "I am first in line.",
+          "example_vi": "Tôi đứng đầu hàng.",
+          "part_of_speech": "adjective",
+          "image_hint": "first place",
+          "unit_id": "a1-numbers-time",
+          "image_url": "https://loremflickr.com/400/300/first,first?lock=9923"
+        },
+        {
+          "word": "second",
+          "phonetic": "/ˈsɛkənd/",
+          "vi": "thứ hai",
+          "example": "My birthday is on the second.",
+          "example_vi": "Sinh nhật tôi ngày mùng hai.",
+          "part_of_speech": "adjective",
+          "image_hint": "number two",
+          "unit_id": "a1-numbers-time",
+          "image_url": "https://loremflickr.com/400/300/second,number?lock=7050"
+        },
+        {
+          "word": "half",
+          "phonetic": "/hæf/",
+          "vi": "một nửa",
+          "example": "Half of the students are girls.",
+          "example_vi": "Một nửa học sinh là nữ.",
+          "part_of_speech": "noun",
+          "image_hint": "half circle",
+          "unit_id": "a1-numbers-time",
+          "image_url": "https://loremflickr.com/400/300/half,half?lock=1247"
+        },
+        {
+          "word": "o'clock",
+          "phonetic": "/əˈklɒk/",
+          "vi": "giờ (đúng)",
+          "example": "It is three o'clock.",
+          "example_vi": "Bây giờ là ba giờ.",
+          "part_of_speech": "adverb",
+          "image_hint": "clock showing 3",
+          "unit_id": "a1-numbers-time",
+          "image_url": "https://loremflickr.com/400/300/o'clock,clock?lock=9071"
         }
       ]
     },
@@ -1299,6 +1772,116 @@
           "part_of_speech": "noun",
           "image_hint": "kitchen",
           "image_url": "https://loremflickr.com/400/300/kitchen?lock=9436"
+        },
+        {
+          "word": "knee",
+          "phonetic": "/niː/",
+          "vi": "đầu gối",
+          "example": "I hurt my knee.",
+          "example_vi": "Tôi bị đau đầu gối.",
+          "part_of_speech": "noun",
+          "image_hint": "knee",
+          "unit_id": "a1-body-places",
+          "image_url": "https://loremflickr.com/400/300/knee?lock=3278"
+        },
+        {
+          "word": "shoulder",
+          "phonetic": "/ˈʃoʊldər/",
+          "vi": "vai",
+          "example": "He has broad shoulders.",
+          "example_vi": "Anh ấy có vai rộng.",
+          "part_of_speech": "noun",
+          "image_hint": "shoulder",
+          "unit_id": "a1-body-places",
+          "image_url": "https://loremflickr.com/400/300/shoulder?lock=3539"
+        },
+        {
+          "word": "stomach",
+          "phonetic": "/ˈstʌmək/",
+          "vi": "bụng",
+          "example": "My stomach hurts.",
+          "example_vi": "Bụng tôi đau.",
+          "part_of_speech": "noun",
+          "image_hint": "stomach",
+          "unit_id": "a1-body-places",
+          "image_url": "https://loremflickr.com/400/300/stomach?lock=7687"
+        },
+        {
+          "word": "neck",
+          "phonetic": "/nɛk/",
+          "vi": "cổ",
+          "example": "She wears a necklace on her neck.",
+          "example_vi": "Cô ấy đeo vòng cổ.",
+          "part_of_speech": "noun",
+          "image_hint": "neck",
+          "unit_id": "a1-body-places",
+          "image_url": "https://loremflickr.com/400/300/neck?lock=6389"
+        },
+        {
+          "word": "back",
+          "phonetic": "/bæk/",
+          "vi": "lưng",
+          "example": "My back is sore.",
+          "example_vi": "Lưng tôi đau.",
+          "part_of_speech": "noun",
+          "image_hint": "back",
+          "unit_id": "a1-body-places",
+          "image_url": "https://loremflickr.com/400/300/back?lock=826"
+        },
+        {
+          "word": "tooth",
+          "phonetic": "/tuːθ/",
+          "vi": "răng",
+          "example": "I brush my teeth every day.",
+          "example_vi": "Tôi đánh răng mỗi ngày.",
+          "part_of_speech": "noun",
+          "image_hint": "tooth",
+          "unit_id": "a1-body-places",
+          "image_url": "https://loremflickr.com/400/300/tooth?lock=1669"
+        },
+        {
+          "word": "school",
+          "phonetic": "/skuːl/",
+          "vi": "trường học",
+          "example": "I go to school by bus.",
+          "example_vi": "Tôi đi học bằng xe buýt.",
+          "part_of_speech": "noun",
+          "image_hint": "school building",
+          "unit_id": "a1-body-places",
+          "image_url": "https://loremflickr.com/400/300/school,school?lock=6163"
+        },
+        {
+          "word": "park",
+          "phonetic": "/pɑːrk/",
+          "vi": "công viên",
+          "example": "We play in the park.",
+          "example_vi": "Chúng tôi chơi trong công viên.",
+          "part_of_speech": "noun",
+          "image_hint": "park with trees",
+          "unit_id": "a1-body-places",
+          "image_url": "https://loremflickr.com/400/300/park,park?lock=8124"
+        },
+        {
+          "word": "store",
+          "phonetic": "/stɔːr/",
+          "vi": "cửa hàng",
+          "example": "The store is open.",
+          "example_vi": "Cửa hàng đang mở.",
+          "part_of_speech": "noun",
+          "image_hint": "store front",
+          "unit_id": "a1-body-places",
+          "image_url": "https://loremflickr.com/400/300/store,store?lock=3575"
+        },
+        {
+          "word": "room",
+          "phonetic": "/ruːm/",
+          "vi": "phòng",
+          "example": "My room is small.",
+          "example_vi": "Phòng tôi nhỏ.",
+          "part_of_speech": "noun",
+          "image_hint": "bedroom",
+          "unit_id": "a1-body-places",
+          "image_url": "https://loremflickr.com/400/300/room,bedroom?lock=4957"
         }
       ]
     },
@@ -1557,6 +2140,138 @@
           "part_of_speech": "adverb phrase",
           "image_hint": "daily calendar",
           "image_url": "https://loremflickr.com/400/300/every day,daily?lock=7524"
+        },
+        {
+          "word": "wake up",
+          "phonetic": "/weɪk ʌp/",
+          "vi": "thức dậy",
+          "example": "I wake up at 6am.",
+          "example_vi": "Tôi thức dậy lúc 6 giờ.",
+          "part_of_speech": "verb",
+          "image_hint": "waking up",
+          "unit_id": "a2-daily-routine",
+          "image_url": "https://loremflickr.com/400/300/wake up,waking?lock=4416"
+        },
+        {
+          "word": "get dressed",
+          "phonetic": "/ɡɛt drɛst/",
+          "vi": "mặc quần áo",
+          "example": "I get dressed after breakfast.",
+          "example_vi": "Tôi mặc quần áo sau bữa sáng.",
+          "part_of_speech": "verb",
+          "image_hint": "getting dressed",
+          "unit_id": "a2-daily-routine",
+          "image_url": "https://loremflickr.com/400/300/get dressed,getting?lock=9573"
+        },
+        {
+          "word": "brush teeth",
+          "phonetic": "/brʌʃ tiːθ/",
+          "vi": "đánh răng",
+          "example": "I brush my teeth twice a day.",
+          "example_vi": "Tôi đánh răng hai lần một ngày.",
+          "part_of_speech": "verb",
+          "image_hint": "brushing teeth",
+          "unit_id": "a2-daily-routine",
+          "image_url": "https://loremflickr.com/400/300/brush teeth,brushing?lock=5688"
+        },
+        {
+          "word": "take a shower",
+          "phonetic": "/teɪk ə ˈʃaʊər/",
+          "vi": "tắm vòi sen",
+          "example": "I take a shower in the morning.",
+          "example_vi": "Tôi tắm vào buổi sáng.",
+          "part_of_speech": "verb",
+          "image_hint": "shower",
+          "unit_id": "a2-daily-routine",
+          "image_url": "https://loremflickr.com/400/300/take a shower,shower?lock=3613"
+        },
+        {
+          "word": "go to bed",
+          "phonetic": "/ɡoʊ tuː bɛd/",
+          "vi": "đi ngủ",
+          "example": "I go to bed at 10pm.",
+          "example_vi": "Tôi đi ngủ lúc 10 giờ.",
+          "part_of_speech": "verb",
+          "image_hint": "bed",
+          "unit_id": "a2-daily-routine",
+          "image_url": "https://loremflickr.com/400/300/go to bed,bed?lock=8127"
+        },
+        {
+          "word": "exercise",
+          "phonetic": "/ˈɛksərsaɪz/",
+          "vi": "tập thể dục",
+          "example": "I exercise every morning.",
+          "example_vi": "Tôi tập thể dục mỗi sáng.",
+          "part_of_speech": "verb",
+          "image_hint": "person exercising",
+          "unit_id": "a2-daily-routine",
+          "image_url": "https://loremflickr.com/400/300/exercise,person?lock=7051"
+        },
+        {
+          "word": "watch TV",
+          "phonetic": "/wɒtʃ tiː viː/",
+          "vi": "xem TV",
+          "example": "We watch TV after dinner.",
+          "example_vi": "Chúng tôi xem TV sau bữa tối.",
+          "part_of_speech": "verb",
+          "image_hint": "watching TV",
+          "unit_id": "a2-daily-routine",
+          "image_url": "https://loremflickr.com/400/300/watch TV,watching?lock=4319"
+        },
+        {
+          "word": "listen to music",
+          "phonetic": "/ˈlɪsən tuː ˈmjuːzɪk/",
+          "vi": "nghe nhạc",
+          "example": "I listen to music on the bus.",
+          "example_vi": "Tôi nghe nhạc trên xe buýt.",
+          "part_of_speech": "verb",
+          "image_hint": "headphones",
+          "unit_id": "a2-daily-routine",
+          "image_url": "https://loremflickr.com/400/300/listen to music,headphones?lock=331"
+        },
+        {
+          "word": "phone",
+          "phonetic": "/foʊn/",
+          "vi": "điện thoại",
+          "example": "I call my mother on the phone.",
+          "example_vi": "Tôi gọi mẹ bằng điện thoại.",
+          "part_of_speech": "noun",
+          "image_hint": "smartphone",
+          "unit_id": "a2-daily-routine",
+          "image_url": "https://loremflickr.com/400/300/phone,smartphone?lock=2519"
+        },
+        {
+          "word": "ready",
+          "phonetic": "/ˈrɛdi/",
+          "vi": "sẵn sàng",
+          "example": "Are you ready to go?",
+          "example_vi": "Bạn sẵn sàng đi chưa?",
+          "part_of_speech": "adjective",
+          "image_hint": "ready thumbs up",
+          "unit_id": "a2-daily-routine",
+          "image_url": "https://loremflickr.com/400/300/ready,ready?lock=8867"
+        },
+        {
+          "word": "still",
+          "phonetic": "/stɪl/",
+          "vi": "vẫn còn",
+          "example": "I am still at home.",
+          "example_vi": "Tôi vẫn còn ở nhà.",
+          "part_of_speech": "adverb",
+          "image_hint": "still at home",
+          "unit_id": "a2-daily-routine",
+          "image_url": "https://loremflickr.com/400/300/still,still?lock=3055"
+        },
+        {
+          "word": "already",
+          "phonetic": "/ɔːlˈrɛdi/",
+          "vi": "đã ... rồi",
+          "example": "I already finished my homework.",
+          "example_vi": "Tôi đã làm bài tập xong rồi.",
+          "part_of_speech": "adverb",
+          "image_hint": "checkmark done",
+          "unit_id": "a2-daily-routine",
+          "image_url": "https://loremflickr.com/400/300/already,checkmark?lock=3909"
         }
       ]
     },
@@ -1815,6 +2530,116 @@
           "part_of_speech": "adjective",
           "image_hint": "clean water",
           "image_url": "https://loremflickr.com/400/300/clean,clean?lock=8464"
+        },
+        {
+          "word": "thunder",
+          "phonetic": "/ˈθʌndər/",
+          "vi": "sấm",
+          "example": "The thunder is very loud.",
+          "example_vi": "Sấm rất to.",
+          "part_of_speech": "noun",
+          "image_hint": "thunder cloud",
+          "unit_id": "a2-weather-nature",
+          "image_url": "https://loremflickr.com/400/300/thunder,thunder?lock=1616"
+        },
+        {
+          "word": "lightning",
+          "phonetic": "/ˈlaɪtnɪŋ/",
+          "vi": "chớp",
+          "example": "Lightning lit up the sky.",
+          "example_vi": "Chớp sáng rực bầu trời.",
+          "part_of_speech": "noun",
+          "image_hint": "lightning bolt",
+          "unit_id": "a2-weather-nature",
+          "image_url": "https://loremflickr.com/400/300/lightning,lightning?lock=6643"
+        },
+        {
+          "word": "flood",
+          "phonetic": "/flʌd/",
+          "vi": "lũ lụt",
+          "example": "The flood damaged many houses.",
+          "example_vi": "Lũ lụt làm hư hại nhiều nhà.",
+          "part_of_speech": "noun",
+          "image_hint": "flood water",
+          "unit_id": "a2-weather-nature",
+          "image_url": "https://loremflickr.com/400/300/flood,flood?lock=2168"
+        },
+        {
+          "word": "rainbow",
+          "phonetic": "/ˈreɪnboʊ/",
+          "vi": "cầu vồng",
+          "example": "A rainbow appeared after the rain.",
+          "example_vi": "Cầu vồng xuất hiện sau mưa.",
+          "part_of_speech": "noun",
+          "image_hint": "rainbow",
+          "unit_id": "a2-weather-nature",
+          "image_url": "https://loremflickr.com/400/300/rainbow?lock=1222"
+        },
+        {
+          "word": "humidity",
+          "phonetic": "/hjuːˈmɪdɪti/",
+          "vi": "độ ẩm",
+          "example": "The humidity is very high today.",
+          "example_vi": "Độ ẩm hôm nay rất cao.",
+          "part_of_speech": "noun",
+          "image_hint": "humidity gauge",
+          "unit_id": "a2-weather-nature",
+          "image_url": "https://loremflickr.com/400/300/humidity,humidity?lock=9152"
+        },
+        {
+          "word": "earthquake",
+          "phonetic": "/ˈɜːrθkweɪk/",
+          "vi": "động đất",
+          "example": "The earthquake was very strong.",
+          "example_vi": "Trận động đất rất mạnh.",
+          "part_of_speech": "noun",
+          "image_hint": "earthquake damage",
+          "unit_id": "a2-weather-nature",
+          "image_url": "https://loremflickr.com/400/300/earthquake,earthquake?lock=9027"
+        },
+        {
+          "word": "field",
+          "phonetic": "/fiːld/",
+          "vi": "cánh đồng",
+          "example": "The cows are in the field.",
+          "example_vi": "Những con bò ở trên cánh đồng.",
+          "part_of_speech": "noun",
+          "image_hint": "green field",
+          "unit_id": "a2-weather-nature",
+          "image_url": "https://loremflickr.com/400/300/field,green?lock=4095"
+        },
+        {
+          "word": "lake",
+          "phonetic": "/leɪk/",
+          "vi": "hồ",
+          "example": "We swam in the lake.",
+          "example_vi": "Chúng tôi bơi trong hồ.",
+          "part_of_speech": "noun",
+          "image_hint": "calm lake",
+          "unit_id": "a2-weather-nature",
+          "image_url": "https://loremflickr.com/400/300/lake,calm?lock=5458"
+        },
+        {
+          "word": "garden",
+          "phonetic": "/ˈɡɑːrdən/",
+          "vi": "vườn",
+          "example": "My mother grows flowers in the garden.",
+          "example_vi": "Mẹ tôi trồng hoa trong vườn.",
+          "part_of_speech": "noun",
+          "image_hint": "flower garden",
+          "unit_id": "a2-weather-nature",
+          "image_url": "https://loremflickr.com/400/300/garden,flower?lock=1120"
+        },
+        {
+          "word": "hill",
+          "phonetic": "/hɪl/",
+          "vi": "đồi",
+          "example": "The hill is not very high.",
+          "example_vi": "Đồi không cao lắm.",
+          "part_of_speech": "noun",
+          "image_hint": "green hill",
+          "unit_id": "a2-weather-nature",
+          "image_url": "https://loremflickr.com/400/300/hill,green?lock=2650"
         }
       ]
     },
@@ -2073,6 +2898,116 @@
           "part_of_speech": "noun",
           "image_hint": "promotion celebration",
           "image_url": "https://loremflickr.com/400/300/promotion,promotion?lock=1781"
+        },
+        {
+          "word": "doctor",
+          "phonetic": "/ˈdɒktər/",
+          "vi": "bác sĩ",
+          "example": "The doctor helped me.",
+          "example_vi": "Bác sĩ đã giúp tôi.",
+          "part_of_speech": "noun",
+          "image_hint": "doctor",
+          "unit_id": "a2-work-jobs",
+          "image_url": "https://loremflickr.com/400/300/doctor?lock=9015"
+        },
+        {
+          "word": "pilot",
+          "phonetic": "/ˈpaɪlət/",
+          "vi": "phi công",
+          "example": "The pilot landed the plane safely.",
+          "example_vi": "Phi công đã hạ cánh an toàn.",
+          "part_of_speech": "noun",
+          "image_hint": "pilot",
+          "unit_id": "a2-work-jobs",
+          "image_url": "https://loremflickr.com/400/300/pilot?lock=372"
+        },
+        {
+          "word": "architect",
+          "phonetic": "/ˈɑːrkɪtɛkt/",
+          "vi": "kiến trúc sư",
+          "example": "The architect designed a beautiful house.",
+          "example_vi": "Kiến trúc sư thiết kế một ngôi nhà đẹp.",
+          "part_of_speech": "noun",
+          "image_hint": "architect drawing",
+          "unit_id": "a2-work-jobs",
+          "image_url": "https://loremflickr.com/400/300/architect,architect?lock=7635"
+        },
+        {
+          "word": "journalist",
+          "phonetic": "/ˈdʒɜːrnəlɪst/",
+          "vi": "nhà báo",
+          "example": "The journalist writes news articles.",
+          "example_vi": "Nhà báo viết bài tin tức.",
+          "part_of_speech": "noun",
+          "image_hint": "journalist",
+          "unit_id": "a2-work-jobs",
+          "image_url": "https://loremflickr.com/400/300/journalist?lock=4437"
+        },
+        {
+          "word": "photographer",
+          "phonetic": "/fəˈtɒɡrəfər/",
+          "vi": "nhiếp ảnh gia",
+          "example": "The photographer took beautiful photos.",
+          "example_vi": "Nhiếp ảnh gia chụp những bức ảnh đẹp.",
+          "part_of_speech": "noun",
+          "image_hint": "photographer",
+          "unit_id": "a2-work-jobs",
+          "image_url": "https://loremflickr.com/400/300/photographer?lock=8609"
+        },
+        {
+          "word": "musician",
+          "phonetic": "/mjuːˈzɪʃən/",
+          "vi": "nhạc sĩ",
+          "example": "The musician plays the guitar.",
+          "example_vi": "Nhạc sĩ chơi đàn ghi-ta.",
+          "part_of_speech": "noun",
+          "image_hint": "musician",
+          "unit_id": "a2-work-jobs",
+          "image_url": "https://loremflickr.com/400/300/musician?lock=1822"
+        },
+        {
+          "word": "artist",
+          "phonetic": "/ˈɑːrtɪst/",
+          "vi": "họa sĩ",
+          "example": "The artist painted a picture.",
+          "example_vi": "Họa sĩ vẽ một bức tranh.",
+          "part_of_speech": "noun",
+          "image_hint": "artist painting",
+          "unit_id": "a2-work-jobs",
+          "image_url": "https://loremflickr.com/400/300/artist,artist?lock=2674"
+        },
+        {
+          "word": "chef",
+          "phonetic": "/ʃɛf/",
+          "vi": "đầu bếp",
+          "example": "The chef prepared a delicious meal.",
+          "example_vi": "Đầu bếp chuẩn bị một bữa ăn ngon.",
+          "part_of_speech": "noun",
+          "image_hint": "chef cooking",
+          "unit_id": "a2-work-jobs",
+          "image_url": "https://loremflickr.com/400/300/chef,chef?lock=3883"
+        },
+        {
+          "word": "accountant",
+          "phonetic": "/əˈkaʊntənt/",
+          "vi": "kế toán",
+          "example": "The accountant checks the numbers.",
+          "example_vi": "Kế toán kiểm tra các con số.",
+          "part_of_speech": "noun",
+          "image_hint": "accountant",
+          "unit_id": "a2-work-jobs",
+          "image_url": "https://loremflickr.com/400/300/accountant?lock=1624"
+        },
+        {
+          "word": "lawyer",
+          "phonetic": "/ˈlɔːjər/",
+          "vi": "luật sư",
+          "example": "The lawyer works in a big firm.",
+          "example_vi": "Luật sư làm việc ở một công ty lớn.",
+          "part_of_speech": "noun",
+          "image_hint": "lawyer",
+          "unit_id": "a2-work-jobs",
+          "image_url": "https://loremflickr.com/400/300/lawyer?lock=6581"
         }
       ]
     },
@@ -2331,6 +3266,116 @@
           "part_of_speech": "verb",
           "image_hint": "lending money",
           "image_url": "https://loremflickr.com/400/300/lend,lending?lock=2289"
+        },
+        {
+          "word": "refund",
+          "phonetic": "/ˈriːfʌnd/",
+          "vi": "hoàn tiền",
+          "example": "I asked for a refund.",
+          "example_vi": "Tôi yêu cầu hoàn tiền.",
+          "part_of_speech": "noun",
+          "image_hint": "refund receipt",
+          "unit_id": "a2-shopping-money",
+          "image_url": "https://loremflickr.com/400/300/refund,refund?lock=7816"
+        },
+        {
+          "word": "exchange",
+          "phonetic": "/ɪksˈtʃeɪndʒ/",
+          "vi": "đổi hàng",
+          "example": "Can I exchange this for a larger size?",
+          "example_vi": "Tôi có thể đổi cái này sang size lớn hơn không?",
+          "part_of_speech": "verb",
+          "image_hint": "exchange sign",
+          "unit_id": "a2-shopping-money",
+          "image_url": "https://loremflickr.com/400/300/exchange,exchange?lock=7820"
+        },
+        {
+          "word": "receipt",
+          "phonetic": "/rɪˈsiːt/",
+          "vi": "hóa đơn",
+          "example": "Please keep your receipt.",
+          "example_vi": "Vui lòng giữ hóa đơn.",
+          "part_of_speech": "noun",
+          "image_hint": "receipt",
+          "unit_id": "a2-shopping-money",
+          "image_url": "https://loremflickr.com/400/300/receipt?lock=8089"
+        },
+        {
+          "word": "delivery",
+          "phonetic": "/dɪˈlɪvəri/",
+          "vi": "giao hàng",
+          "example": "The delivery takes three days.",
+          "example_vi": "Giao hàng mất ba ngày.",
+          "part_of_speech": "noun",
+          "image_hint": "delivery truck",
+          "unit_id": "a2-shopping-money",
+          "image_url": "https://loremflickr.com/400/300/delivery,delivery?lock=1065"
+        },
+        {
+          "word": "quality",
+          "phonetic": "/ˈkwɒləti/",
+          "vi": "chất lượng",
+          "example": "This product is of good quality.",
+          "example_vi": "Sản phẩm này chất lượng tốt.",
+          "part_of_speech": "noun",
+          "image_hint": "quality badge",
+          "unit_id": "a2-shopping-money",
+          "image_url": "https://loremflickr.com/400/300/quality,quality?lock=2898"
+        },
+        {
+          "word": "brand",
+          "phonetic": "/brænd/",
+          "vi": "nhãn hiệu",
+          "example": "What brand do you like?",
+          "example_vi": "Bạn thích nhãn hiệu nào?",
+          "part_of_speech": "noun",
+          "image_hint": "brand label",
+          "unit_id": "a2-shopping-money",
+          "image_url": "https://loremflickr.com/400/300/brand,brand?lock=1508"
+        },
+        {
+          "word": "necessary",
+          "phonetic": "/ˈnɛsəsɛri/",
+          "vi": "cần thiết",
+          "example": "Is this necessary?",
+          "example_vi": "Cái này có cần thiết không?",
+          "part_of_speech": "adjective",
+          "image_hint": "necessary icon",
+          "unit_id": "a2-shopping-money",
+          "image_url": "https://loremflickr.com/400/300/necessary,necessary?lock=3053"
+        },
+        {
+          "word": "save",
+          "phonetic": "/seɪv/",
+          "vi": "tiết kiệm",
+          "example": "I want to save money.",
+          "example_vi": "Tôi muốn tiết kiệm tiền.",
+          "part_of_speech": "verb",
+          "image_hint": "piggy bank",
+          "unit_id": "a2-shopping-money",
+          "image_url": "https://loremflickr.com/400/300/save,piggy?lock=5397"
+        },
+        {
+          "word": "spend",
+          "phonetic": "/spɛnd/",
+          "vi": "tiêu tiền",
+          "example": "Don't spend too much.",
+          "example_vi": "Đừng tiêu quá nhiều.",
+          "part_of_speech": "verb",
+          "image_hint": "spending money",
+          "unit_id": "a2-shopping-money",
+          "image_url": "https://loremflickr.com/400/300/spend,spending?lock=2682"
+        },
+        {
+          "word": "cost",
+          "phonetic": "/kɒst/",
+          "vi": "có giá là",
+          "example": "How much does this cost?",
+          "example_vi": "Cái này giá bao nhiêu?",
+          "part_of_speech": "verb",
+          "image_hint": "price tag",
+          "unit_id": "a2-shopping-money",
+          "image_url": "https://loremflickr.com/400/300/cost,price?lock=5456"
         }
       ]
     },
@@ -2589,6 +3634,116 @@
           "part_of_speech": "noun",
           "image_hint": "tour group",
           "image_url": "https://loremflickr.com/400/300/tour,tour?lock=347"
+        },
+        {
+          "word": "arrive",
+          "phonetic": "/əˈraɪv/",
+          "vi": "đến nơi",
+          "example": "We arrived at the airport at 6am.",
+          "example_vi": "Chúng tôi đến sân bay lúc 6 giờ.",
+          "part_of_speech": "verb",
+          "image_hint": "arriving",
+          "unit_id": "a2-travel-transport",
+          "image_url": "https://loremflickr.com/400/300/arrive,arriving?lock=5908"
+        },
+        {
+          "word": "depart",
+          "phonetic": "/dɪˈpɑːrt/",
+          "vi": "khởi hành",
+          "example": "The train departs at 8am.",
+          "example_vi": "Tàu khởi hành lúc 8 giờ.",
+          "part_of_speech": "verb",
+          "image_hint": "departure board",
+          "unit_id": "a2-travel-transport",
+          "image_url": "https://loremflickr.com/400/300/depart,departure?lock=9006"
+        },
+        {
+          "word": "delay",
+          "phonetic": "/dɪˈleɪ/",
+          "vi": "sự chậm trễ",
+          "example": "The flight was delayed.",
+          "example_vi": "Chuyến bay bị hoãn.",
+          "part_of_speech": "noun",
+          "image_hint": "delayed sign",
+          "unit_id": "a2-travel-transport",
+          "image_url": "https://loremflickr.com/400/300/delay,delayed?lock=7214"
+        },
+        {
+          "word": "cancel",
+          "phonetic": "/ˈkænsəl/",
+          "vi": "hủy",
+          "example": "They cancelled the flight.",
+          "example_vi": "Họ đã hủy chuyến bay.",
+          "part_of_speech": "verb",
+          "image_hint": "cancelled stamp",
+          "unit_id": "a2-travel-transport",
+          "image_url": "https://loremflickr.com/400/300/cancel,cancelled?lock=8723"
+        },
+        {
+          "word": "terminal",
+          "phonetic": "/ˈtɜːrmɪnəl/",
+          "vi": "nhà ga (sân bay)",
+          "example": "Please go to terminal 2.",
+          "example_vi": "Vui lòng đến nhà ga số 2.",
+          "part_of_speech": "noun",
+          "image_hint": "airport terminal",
+          "unit_id": "a2-travel-transport",
+          "image_url": "https://loremflickr.com/400/300/terminal,airport?lock=8912"
+        },
+        {
+          "word": "gate",
+          "phonetic": "/ɡeɪt/",
+          "vi": "cửa lên máy bay",
+          "example": "The gate number is 15.",
+          "example_vi": "Số cửa là 15.",
+          "part_of_speech": "noun",
+          "image_hint": "airport gate",
+          "unit_id": "a2-travel-transport",
+          "image_url": "https://loremflickr.com/400/300/gate,airport?lock=3282"
+        },
+        {
+          "word": "boarding pass",
+          "phonetic": "/ˈbɔːrdɪŋ pæs/",
+          "vi": "thẻ lên máy bay",
+          "example": "Please show your boarding pass.",
+          "example_vi": "Vui lòng xuất trình thẻ lên máy bay.",
+          "part_of_speech": "noun",
+          "image_hint": "boarding pass",
+          "unit_id": "a2-travel-transport",
+          "image_url": "https://loremflickr.com/400/300/boarding pass?lock=9519"
+        },
+        {
+          "word": "customs",
+          "phonetic": "/ˈkʌstəmz/",
+          "vi": "hải quan",
+          "example": "We went through customs.",
+          "example_vi": "Chúng tôi qua hải quan.",
+          "part_of_speech": "noun",
+          "image_hint": "customs sign",
+          "unit_id": "a2-travel-transport",
+          "image_url": "https://loremflickr.com/400/300/customs,customs?lock=6977"
+        },
+        {
+          "word": "currency",
+          "phonetic": "/ˈkʌrənsi/",
+          "vi": "tiền tệ",
+          "example": "What currency do they use?",
+          "example_vi": "Họ dùng tiền tệ gì?",
+          "part_of_speech": "noun",
+          "image_hint": "currency notes",
+          "unit_id": "a2-travel-transport",
+          "image_url": "https://loremflickr.com/400/300/currency,currency?lock=744"
+        },
+        {
+          "word": "guide",
+          "phonetic": "/ɡaɪd/",
+          "vi": "hướng dẫn viên",
+          "example": "The tour guide speaks English.",
+          "example_vi": "Hướng dẫn viên nói tiếng Anh.",
+          "part_of_speech": "noun",
+          "image_hint": "tour guide",
+          "unit_id": "a2-travel-transport",
+          "image_url": "https://loremflickr.com/400/300/guide,tour?lock=1420"
         }
       ]
     }

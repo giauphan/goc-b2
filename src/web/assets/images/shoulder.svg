@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 100" width="320" height="200">
+<rect width="160" height="100" rx="8" fill="#FAFAFA"/>
+<rect x="0" y="0" width="160" height="6" fill="#EF4444" opacity="0.8"/>
+<circle cx="80" cy="52" r="30" fill="#F0F0F0" stroke="#EF4444" stroke-width="3"/>
+<text x="80" y="62" text-anchor="middle" font-size="34" font-weight="bold" fill="#EF4444">S</text>
+<text x="80" y="95" text-anchor="middle" font-size="11" fill="#6B7280" font-family="sans-serif">shoulder</text>
+</svg>
