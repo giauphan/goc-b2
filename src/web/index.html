@@ -4,6 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gốc.B2 — Học Tiếng Anh Cho Người Việt (A1→A2)</title>
+  <meta name="description" content="Học tiếng Anh cho người Việt. 630 từ vựng A1→A2, SM-2 ghi nhớ thông minh, phát âm, hình ảnh minh họa.">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#2563eb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="apple-touch-icon" href="/assets/icons/icon-192.svg">  
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -87,6 +93,7 @@
       <span class="nav-tab" data-page="study">Học</span>
       <span class="nav-tab" data-page="quiz">Quiz</span>
       <span class="nav-tab" data-page="sentence">Viết câu</span>
+      <span class="nav-tab" data-page="pronunciation">Phát âm</span>
       <span class="nav-tab" data-page="grammar">Ngữ pháp</span>
       <span class="nav-tab" data-page="stats">Tiến độ</span>
     </div>
@@ -323,8 +330,114 @@
 </div>
 
 <!-- ════════════════════════════════════════════════════ -->
-<!-- PAGE: STATS -->
+<!-- PAGE: PRONUNCIATION -->
 <!-- ════════════════════════════════════════════════════ -->
+<div id="page-pronunciation" class="page">
+  <div class="max-w-2xl mx-auto px-4 pt-24 pb-12">
+    <h2 class="text-2xl font-bold mb-1">🗣️ Luyện phát âm</h2>
+    <p class="text-gray-500 text-sm mb-6">Các âm khó cho người Việt — nghe và luyện đọc theo.</p>
+    <div class="grid gap-4">
+      <div class="bg-white rounded-xl border border-gray-100 p-5">
+        <div class="flex items-center justify-between mb-3">
+          <div><span class="text-lg font-bold text-brand-600">/θ/</span> <span class="text-gray-400 text-sm">(thè lưỡi)</span></div>
+          <button onclick="speakPhoneme('θ')" class="px-3 py-1.5 bg-brand-100 hover:bg-brand-200 text-brand-700 rounded-lg text-sm transition">🔊 Nghe</button>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <span onclick="speakWord('think')" class="px-3 py-1.5 bg-gray-50 hover:bg-brand-50 rounded-lg text-sm cursor-pointer transition">think</span>
+          <span onclick="speakWord('thank you')" class="px-3 py-1.5 bg-gray-50 hover:bg-brand-50 rounded-lg text-sm cursor-pointer transition">thank you</span>
+          <span onclick="speakWord('three')" class="px-3 py-1.5 bg-gray-50 hover:bg-brand-50 rounded-lg text-sm cursor-pointer transition">three</span>
+          <span onclick="speakWord('thirsty')" class="px-3 py-1.5 bg-gray-50 hover:bg-brand-50 rounded-lg text-sm cursor-pointer transition">thirsty</span>
+        </div>
+        <div class="text-xs text-gray-400 mt-2">💡 Lưỡi giữa hai hàm răng, thổi nhẹ</div>
+      </div>
+      <div class="bg-white rounded-xl border border-gray-100 p-5">
+        <div class="flex items-center justify-between mb-3">
+          <div><span class="text-lg font-bold text-purple-600">/ð/</span> <span class="text-gray-400 text-sm">(rung)</span></div>
+          <button onclick="speakPhoneme('ð')" class="px-3 py-1.5 bg-purple-100 hover:bg-purple-200 text-purple-700 rounded-lg text-sm transition">🔊 Nghe</button>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <span onclick="speakWord('mother')" class="px-3 py-1.5 bg-gray-50 hover:bg-purple-50 rounded-lg text-sm cursor-pointer transition">mother</span>
+          <span onclick="speakWord('father')" class="px-3 py-1.5 bg-gray-50 hover:bg-purple-50 rounded-lg text-sm cursor-pointer transition">father</span>
+          <span onclick="speakWord('brother')" class="px-3 py-1.5 bg-gray-50 hover:bg-purple-50 rounded-lg text-sm cursor-pointer transition">brother</span>
+          <span onclick="speakWord('weather')" class="px-3 py-1.5 bg-gray-50 hover:bg-purple-50 rounded-lg text-sm cursor-pointer transition">weather</span>
+        </div>
+        <div class="text-xs text-gray-400 mt-2">💡 Giống /θ/ nhưng rung dây thanh</div>
+      </div>
+      <div class="bg-white rounded-xl border border-gray-100 p-5">
+        <div class="flex items-center justify-between mb-3">
+          <div><span class="text-lg font-bold text-green-600">/ʃ/</span> <span class="text-gray-400 text-sm">(sh)</span></div>
+          <button onclick="speakPhoneme('ʃ')" class="px-3 py-1.5 bg-green-100 hover:bg-green-200 text-green-700 rounded-lg text-sm transition">🔊 Nghe</button>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <span onclick="speakWord('ship')" class="px-3 py-1.5 bg-gray-50 hover:bg-green-50 rounded-lg text-sm cursor-pointer transition">ship</span>
+          <span onclick="speakWord('shop')" class="px-3 py-1.5 bg-gray-50 hover:bg-green-50 rounded-lg text-sm cursor-pointer transition">shop</span>
+          <span onclick="speakWord('shirt')" class="px-3 py-1.5 bg-gray-50 hover:bg-green-50 rounded-lg text-sm cursor-pointer transition">shirt</span>
+          <span onclick="speakWord('short')" class="px-3 py-1.5 bg-gray-50 hover:bg-green-50 rounded-lg text-sm cursor-pointer transition">short</span>
+        </div>
+        <div class="text-xs text-gray-400 mt-2">💡 Môi tròn, lưỡi cong</div>
+      </div>
+      <div class="bg-white rounded-xl border border-gray-100 p-5">
+        <div class="flex items-center justify-between mb-3">
+          <div><span class="text-lg font-bold text-red-600">/tʃ/</span> <span class="text-gray-400 text-sm">(ch)</span></div>
+          <button onclick="speakPhoneme('tʃ')" class="px-3 py-1.5 bg-red-100 hover:bg-red-200 text-red-700 rounded-lg text-sm transition">🔊 Nghe</button>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <span onclick="speakWord('cheap')" class="px-3 py-1.5 bg-gray-50 hover:bg-red-50 rounded-lg text-sm cursor-pointer transition">cheap</span>
+          <span onclick="speakWord('chicken')" class="px-3 py-1.5 bg-gray-50 hover:bg-red-50 rounded-lg text-sm cursor-pointer transition">chicken</span>
+          <span onclick="speakWord('children')" class="px-3 py-1.5 bg-gray-50 hover:bg-red-50 rounded-lg text-sm cursor-pointer transition">children</span>
+          <span onclick="speakWord('lunch')" class="px-3 py-1.5 bg-gray-50 hover:bg-red-50 rounded-lg text-sm cursor-pointer transition">lunch</span>
+        </div>
+        <div class="text-xs text-gray-400 mt-2">💡 Bật hơi mạnh hơn "ch" Việt</div>
+      </div>
+      <div class="bg-white rounded-xl border border-gray-100 p-5">
+        <div class="flex items-center justify-between mb-3">
+          <div><span class="text-lg font-bold text-amber-600">Phụ âm cuối</span></div>
+          <button onclick="speakPhoneme('final')" class="px-3 py-1.5 bg-amber-100 hover:bg-amber-200 text-amber-700 rounded-lg text-sm transition">🔊 Nghe</button>
+        </div>
+        <div class="grid grid-cols-3 gap-2">
+          <span onclick="speakWord('cat')" class="px-3 py-1.5 bg-gray-50 hover:bg-amber-50 rounded-lg text-sm cursor-pointer transition text-center">cat</span>
+          <span onclick="speakWord('dog')" class="px-3 py-1.5 bg-gray-50 hover:bg-amber-50 rounded-lg text-sm cursor-pointer transition text-center">dog</span>
+          <span onclick="speakWord('book')" class="px-3 py-1.5 bg-gray-50 hover:bg-amber-50 rounded-lg text-sm cursor-pointer transition text-center">book</span>
+          <span onclick="speakWord('egg')" class="px-3 py-1.5 bg-gray-50 hover:bg-amber-50 rounded-lg text-sm cursor-pointer transition text-center">egg</span>
+          <span onclick="speakWord('milk')" class="px-3 py-1.5 bg-gray-50 hover:bg-amber-50 rounded-lg text-sm cursor-pointer transition text-center">milk</span>
+          <span onclick="speakWord('help')" class="px-3 py-1.5 bg-gray-50 hover:bg-amber-50 rounded-lg text-sm cursor-pointer transition text-center">help</span>
+        </div>
+        <div class="text-xs text-gray-400 mt-2">💡 Giữ âm cuối — "cat" ≠ "ca"</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ═══════════════════════════════════════════════════════
+// PWA
+
+// Register service worker
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js');
+  });
+}
+
+// Pronunciation TTS
+function speakPhoneme(sound) {
+  const map = {
+    'θ': 'th th th',
+    'ð': 'th th th',
+    'ʃ': 'sh sh sh',
+    'tʃ': 'ch ch ch',
+    'final': 'cat dog book egg milk help'
+  };
+  const text = map[sound] || sound;
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = 'en-US';
+  u.rate = 0.7;
+  speechSynthesis.speak(u);
+}
+
+// ═══════════════════════════════════════════════════════
+// PAGE: STATS
+// ═══════════════════════════════════════════════════════
 <div id="page-stats" class="page">
   <div class="max-w-3xl mx-auto px-4 pt-24 pb-12">
     <h2 class="text-2xl font-bold mb-2">📊 Tiến độ học tập</h2>
@@ -338,7 +451,8 @@
   </div>
 </div>
 
-<!-- ════════════════════════════════════════════════════ -->
+// ═══════════════════════════════════════════════════════
+// DATA
 <!-- PAGE: SENTENCE PRACTICE -->
 <!-- ════════════════════════════════════════════════════ -->
 <div id="page-sentence" class="page">
