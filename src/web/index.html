@@ -330,6 +330,20 @@
 </div>
 
 <!-- ════════════════════════════════════════════════════ -->
+<!-- PAGE: STATS -->
+<div id="page-stats" class="page">
+  <div class="max-w-3xl mx-auto px-4 pt-24 pb-12">
+    <h2 class="text-2xl font-bold mb-2">📊 Tiến độ học tập</h2>
+    <p class="text-gray-500 text-sm mb-6">Xem bạn đã học được bao nhiêu.</p>
+    <div class="grid sm:grid-cols-2 gap-4 mb-6" id="stats-cards"></div>
+    <div class="bg-white rounded-xl p-6 border border-gray-100 mb-6">
+      <h3 class="font-bold mb-4">📚 Chi tiết từng unit</h3>
+      <div class="space-y-3" id="stats-unit-breakdown"></div>
+    </div>
+    <button onclick="resetProgress()" class="text-sm text-red-400 hover:text-red-600">🗑️ Xoá toàn bộ tiến trình</button>
+  </div>
+</div>
+
 <!-- PAGE: PRONUNCIATION -->
 <!-- ════════════════════════════════════════════════════ -->
 <div id="page-pronunciation" class="page">
@@ -435,23 +449,7 @@ function speakPhoneme(sound) {
   speechSynthesis.speak(u);
 }
 
-// ═══════════════════════════════════════════════════════
 // PAGE: STATS
-// ═══════════════════════════════════════════════════════
-<div id="page-stats" class="page">
-  <div class="max-w-3xl mx-auto px-4 pt-24 pb-12">
-    <h2 class="text-2xl font-bold mb-2">📊 Tiến độ học tập</h2>
-    <p class="text-gray-500 text-sm mb-6">Xem bạn đã học được bao nhiêu.</p>
-    <div class="grid sm:grid-cols-2 gap-4 mb-6" id="stats-cards"></div>
-    <div class="bg-white rounded-xl p-6 border border-gray-100 mb-6">
-      <h3 class="font-bold mb-4">📚 Chi tiết từng unit</h3>
-      <div class="space-y-3" id="stats-unit-breakdown"></div>
-    </div>
-    <button onclick="resetProgress()" class="text-sm text-red-400 hover:text-red-600">🗑️ Xoá toàn bộ tiến trình</button>
-  </div>
-</div>
-
-// ═══════════════════════════════════════════════════════
 // DATA
 <!-- PAGE: SENTENCE PRACTICE -->
 <!-- ════════════════════════════════════════════════════ -->
