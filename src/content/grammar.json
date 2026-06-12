@@ -1,7 +1,8 @@
 {
   "meta": {
     "title": "Vietnamese-Focused Grammar Module",
-    "description": "Grammar topics specifically designed for Vietnamese learners' pain points."
+    "description": "Grammar topics for Vietnamese learners — A1 & A2 levels",
+    "total_topics": 9
   },
   "topics": [
     {
@@ -32,11 +33,56 @@
         }
       ],
       "exercises": [
-        { "question": "I have ___ apple.", "options": ["a", "an", "the", "(none)"], "correct": "an" },
-        { "question": "She is ___ teacher.", "options": ["a", "an", "the", "(none)"], "correct": "a" },
-        { "question": "___ sun is very hot today.", "options": ["A", "An", "The", "(none)"], "correct": "The" },
-        { "question": "I like ___ dogs. (nói chung)", "options": ["a", "an", "the", "(none)"], "correct": "(none)" },
-        { "question": "He is ___ honest man.", "options": ["a", "an", "the", "(none)"], "correct": "an" }
+        {
+          "question": "I have ___ apple.",
+          "options": [
+            "a",
+            "an",
+            "the",
+            "(none)"
+          ],
+          "correct": "an"
+        },
+        {
+          "question": "She is ___ teacher.",
+          "options": [
+            "a",
+            "an",
+            "the",
+            "(none)"
+          ],
+          "correct": "a"
+        },
+        {
+          "question": "___ sun is very hot today.",
+          "options": [
+            "A",
+            "An",
+            "The",
+            "(none)"
+          ],
+          "correct": "The"
+        },
+        {
+          "question": "I like ___ dogs. (nói chung)",
+          "options": [
+            "a",
+            "an",
+            "the",
+            "(none)"
+          ],
+          "correct": "(none)"
+        },
+        {
+          "question": "He is ___ honest man.",
+          "options": [
+            "a",
+            "an",
+            "the",
+            "(none)"
+          ],
+          "correct": "an"
+        }
       ]
     },
     {
@@ -67,11 +113,56 @@
         }
       ],
       "exercises": [
-        { "question": "I ___ (go) to school yesterday.", "options": ["go", "goes", "went", "going"], "correct": "went" },
-        { "question": "She ___ (eat) breakfast every morning.", "options": ["eat", "eats", "ate", "eating"], "correct": "eats" },
-        { "question": "They ___ (play) soccer right now.", "options": ["play", "plays", "played", "are playing"], "correct": "are playing" },
-        { "question": "I ___ (be) a student.", "options": ["am", "is", "are", "be"], "correct": "am" },
-        { "question": "Tomorrow we ___ (visit) grandma.", "options": ["visit", "visited", "will visit", "are visiting"], "correct": "will visit" }
+        {
+          "question": "I ___ (go) to school yesterday.",
+          "options": [
+            "go",
+            "goes",
+            "went",
+            "going"
+          ],
+          "correct": "went"
+        },
+        {
+          "question": "She ___ (eat) breakfast every morning.",
+          "options": [
+            "eat",
+            "eats",
+            "ate",
+            "eating"
+          ],
+          "correct": "eats"
+        },
+        {
+          "question": "They ___ (play) soccer right now.",
+          "options": [
+            "play",
+            "plays",
+            "played",
+            "are playing"
+          ],
+          "correct": "are playing"
+        },
+        {
+          "question": "I ___ (be) a student.",
+          "options": [
+            "am",
+            "is",
+            "are",
+            "be"
+          ],
+          "correct": "am"
+        },
+        {
+          "question": "Tomorrow we ___ (visit) grandma.",
+          "options": [
+            "visit",
+            "visited",
+            "will visit",
+            "are visiting"
+          ],
+          "correct": "will visit"
+        }
       ]
     },
     {
@@ -102,18 +193,83 @@
       "vi_explanation": "Các âm sau KHÔNG có trong tiếng Việt. Bạn cần luyện riêng.",
       "level": "A1",
       "sounds": [
-        { "sound": "/θ/ (voiceless th)", "vi_closest": "t hoặc th", "example_words": ["think /θɪŋk/", "thank /θæŋk/", "three /θriː/", "tooth /tuːθ/"] },
-        { "sound": "/ð/ (voiced th)", "vi_closest": "d hoặc đ", "example_words": ["this /ðɪs/", "that /ðæt/", "mother /ˈmʌðər/", "the /ðə/"] },
-        { "sound": "/ʃ/ (sh)", "vi_closest": "s (nhưng cong lưỡi)", "example_words": ["ship /ʃɪp/", "sheep /ʃiːp/", "fish /fɪʃ/", "shower /ˈʃaʊər/"] },
-        { "sound": "/tʃ/ (ch)", "vi_closest": "ch (nhưng bật hơi)", "example_words": ["cheap /tʃiːp/", "chicken /ˈtʃɪkɪn/", "teach /tiːtʃ/", "chair /tʃɛr/"] },
-        { "sound": "/ʒ/ (zh)", "vi_closest": "gi (d+di)", "example_words": ["measure /ˈmeʒər/", "pleasure /ˈpleʒər/", "vision /ˈvɪʒən/"] },
-        { "sound": "Final consonants (-t, -d, -k, -p, -b)", "vi_closest": "Tiếng Việt KHÔNG bật các âm cuối", "example_words": ["cat /kæt/ (not /ka/)", "dog /dɒɡ/ (not /dɔ/)", "cup /kʌp/", "bed /bed/"] }
+        {
+          "sound": "/θ/ (voiceless th)",
+          "vi_closest": "t hoặc th",
+          "example_words": [
+            "think /θɪŋk/",
+            "thank /θæŋk/",
+            "three /θriː/",
+            "tooth /tuːθ/"
+          ]
+        },
+        {
+          "sound": "/ð/ (voiced th)",
+          "vi_closest": "d hoặc đ",
+          "example_words": [
+            "this /ðɪs/",
+            "that /ðæt/",
+            "mother /ˈmʌðər/",
+            "the /ðə/"
+          ]
+        },
+        {
+          "sound": "/ʃ/ (sh)",
+          "vi_closest": "s (nhưng cong lưỡi)",
+          "example_words": [
+            "ship /ʃɪp/",
+            "sheep /ʃiːp/",
+            "fish /fɪʃ/",
+            "shower /ˈʃaʊər/"
+          ]
+        },
+        {
+          "sound": "/tʃ/ (ch)",
+          "vi_closest": "ch (nhưng bật hơi)",
+          "example_words": [
+            "cheap /tʃiːp/",
+            "chicken /ˈtʃɪkɪn/",
+            "teach /tiːtʃ/",
+            "chair /tʃɛr/"
+          ]
+        },
+        {
+          "sound": "/ʒ/ (zh)",
+          "vi_closest": "gi (d+di)",
+          "example_words": [
+            "measure /ˈmeʒər/",
+            "pleasure /ˈpleʒər/",
+            "vision /ˈvɪʒən/"
+          ]
+        },
+        {
+          "sound": "Final consonants (-t, -d, -k, -p, -b)",
+          "vi_closest": "Tiếng Việt KHÔNG bật các âm cuối",
+          "example_words": [
+            "cat /kæt/ (not /ka/)",
+            "dog /dɒɡ/ (not /dɔ/)",
+            "cup /kʌp/",
+            "bed /bed/"
+          ]
+        }
       ],
       "minimal_pairs": [
-        {"pair": "ship /ʃɪp/ vs sheep /ʃiːp/", "tip": "/i/ ngắn vs /iː/ dài. 'Ship' ngắn hơn 'sheep'."},
-        {"pair": "think /θɪŋk/ vs sink /sɪŋk/", "tip": "Đặt lưỡi giữa hai hàm răng cho 'th', không chạm răng cho 's'."},
-        {"pair": "cheap /tʃiːp/ vs jeep /dʒiːp/", "tip": "/tʃ/ bật hơi, /dʒ/ rung dây thanh."},
-        {"pair": "cat /kæt/ vs cart /kɑːrt/", "tip": "/æ/ miệng mở rộng, /ɑː/ miệng mở vừa."}
+        {
+          "pair": "ship /ʃɪp/ vs sheep /ʃiːp/",
+          "tip": "/i/ ngắn vs /iː/ dài. 'Ship' ngắn hơn 'sheep'."
+        },
+        {
+          "pair": "think /θɪŋk/ vs sink /sɪŋk/",
+          "tip": "Đặt lưỡi giữa hai hàm răng cho 'th', không chạm răng cho 's'."
+        },
+        {
+          "pair": "cheap /tʃiːp/ vs jeep /dʒiːp/",
+          "tip": "/tʃ/ bật hơi, /dʒ/ rung dây thanh."
+        },
+        {
+          "pair": "cat /kæt/ vs cart /kɑːrt/",
+          "tip": "/æ/ miệng mở rộng, /ɑː/ miệng mở vừa."
+        }
       ]
     },
     {
@@ -136,6 +292,336 @@
           "rule": "Trạng từ tần suất (always, usually, often) đứng TRƯỚC động từ chính",
           "example": "I always eat breakfast. → Tôi luôn ăn sáng.",
           "common_mistake": "I eat always breakfast ❌"
+        }
+      ]
+    },
+    {
+      "id": "grammar-present-perfect",
+      "title": "Thì Hiện Tại Hoàn Thành (Present Perfect)",
+      "vi_explanation": "Dùng để nói về việc đã xảy ra trong quá khứ nhưng không rõ thời gian, hoặc việc bắt đầu trong quá khứ và kéo dài đến hiện tại. Tiếng Việt không có thì này! Dùng 'đã' hoặc 'từng' nhưng không chính xác.",
+      "level": "A2",
+      "rules": [
+        {
+          "rule": "Cấu trúc: have/has + past participle (V3)",
+          "example": "I have eaten pho. → Tôi đã ăn phở rồi.",
+          "common_mistake": "I have eat pho. ❌ (dùng V3, không phải V1)"
+        },
+        {
+          "rule": "Dùng 'ever' trong câu hỏi: Have you ever...?",
+          "example": "Have you ever been to Hanoi? → Bạn đã từng đến Hà Nội chưa?",
+          "note": "'Ever' = 'đã từng'"
+        },
+        {
+          "rule": "Dùng 'never' cho chưa từng: have/has never + V3",
+          "example": "I have never tried durian. → Tôi chưa bao giờ thử sầu riêng.",
+          "common_mistake": "I not have tried ❌ (phải là 'have not' hoặc 'haven't')"
+        },
+        {
+          "rule": "Dùng 'just' cho vừa mới xong: have/has just + V3",
+          "example": "I have just finished my homework. → Tôi vừa làm xong bài tập.",
+          "note": "'Just' đứng giữa have và V3"
+        },
+        {
+          "rule": "Dùng 'already' cho đã rồi, 'yet' cho chưa (câu phủ định/câu hỏi)",
+          "example": "I have already eaten. / Have you eaten yet?",
+          "note": "Yet luôn ở cuối câu"
+        }
+      ],
+      "exercises": [
+        {
+          "question": "I ___ (eat) pho before.",
+          "options": [
+            "have eat",
+            "have eaten",
+            "ate",
+            "eating"
+          ],
+          "correct": "have eaten"
+        },
+        {
+          "question": "___ you ever ___ (be) to Da Lat?",
+          "options": [
+            "Have...be",
+            "Have...been",
+            "Did...go",
+            "Has...been"
+          ],
+          "correct": "Have...been"
+        },
+        {
+          "question": "She ___ (not/try) Vietnamese coffee.",
+          "options": [
+            "hasn't tried",
+            "haven't tried",
+            "not tried",
+            "didn't tried"
+          ],
+          "correct": "hasn't tried"
+        },
+        {
+          "question": "I have ___ (just/finish) work.",
+          "options": [
+            "just finish",
+            "just finished",
+            "finished just",
+            "just finishing"
+          ],
+          "correct": "just finished"
+        },
+        {
+          "question": "Have you done your homework ___?",
+          "options": [
+            "already",
+            "yet",
+            "just",
+            "ever"
+          ],
+          "correct": "yet"
+        }
+      ]
+    },
+    {
+      "id": "grammar-comparatives",
+      "title": "So Sánh Hơn (Comparatives)",
+      "vi_explanation": "Tiếng Việt: 'cao hơn' = 'more tall'? Không! Tiếng Anh có quy tắc: tính từ ngắn thêm -er, tính từ dài thêm 'more'.",
+      "level": "A2",
+      "rules": [
+        {
+          "rule": "Tính từ ngắn (1 âm tiết): adj + -er + than",
+          "example": "tall → taller: I am taller than my brother. → Tôi cao hơn em trai tôi.",
+          "common_mistake": "I am more tall than... ❌ (chỉ dùng 'more' cho tính từ dài)"
+        },
+        {
+          "rule": "Tính từ kết thúc bằng -y: đổi y → i + -er",
+          "example": "happy → happier: She is happier now. → Cô ấy vui hơn bây giờ.",
+          "note": "Không phải 'happyer'!"
+        },
+        {
+          "rule": "Tính từ dài (2+ âm tiết): more + adj + than",
+          "example": "beautiful → more beautiful: Ha Long Bay is more beautiful than I imagined. → Vịnh Hạ Long đẹp hơn tôi tưởng tượng.",
+          "common_mistake": "beautifuler ❌"
+        },
+        {
+          "rule": "Bất quy tắc: good → better, bad → worse, far → farther/further",
+          "example": "My English is better than before. → Tiếng Anh của tôi tốt hơn trước.",
+          "note": "Không nói 'gooder' hay 'badder'!"
+        }
+      ],
+      "exercises": [
+        {
+          "question": "My house is ___ (big) than yours.",
+          "options": [
+            "bigger",
+            "more big",
+            "biger",
+            "big"
+          ],
+          "correct": "bigger"
+        },
+        {
+          "question": "She is ___ (happy) now.",
+          "options": [
+            "more happy",
+            "happier",
+            "happyer",
+            "happyer"
+          ],
+          "correct": "happier"
+        },
+        {
+          "question": "This book is ___ (interesting) than that one.",
+          "options": [
+            "interestinger",
+            "more interesting",
+            "most interesting",
+            "interesting"
+          ],
+          "correct": "more interesting"
+        },
+        {
+          "question": "My English is getting ___ (good).",
+          "options": [
+            "gooder",
+            "better",
+            "more good",
+            "best"
+          ],
+          "correct": "better"
+        },
+        {
+          "question": "Today is ___ (bad) than yesterday.",
+          "options": [
+            "badder",
+            "more bad",
+            "worse",
+            "worst"
+          ],
+          "correct": "worse"
+        }
+      ]
+    },
+    {
+      "id": "grammar-prepositions-place",
+      "title": "Giới Từ Chỉ Nơi Chốn (Prepositions of Place)",
+      "vi_explanation": "Tiếng Việt: 'ở trên', 'ở trong', 'ở dưới' — dùng một từ 'ở' cho mọi nơi. Tiếng Anh: in, on, at, under, between, next to — mỗi giới từ một nghĩa khác nhau!",
+      "level": "A2",
+      "rules": [
+        {
+          "rule": "IN = ở trong (không gian lớn hoặc bao quanh)",
+          "example": "in the room, in Hanoi, in Vietnam, in the world",
+          "note": "Dùng với: thành phố, quốc gia, phòng, thế giới"
+        },
+        {
+          "rule": "ON = ở trên (bề mặt) / ON = ở (đường phố)",
+          "example": "on the table, on the wall; on Nguyen Hue Street",
+          "common_mistake": "I live in Nguyen Hue Street ❌ (phải dùng 'on')"
+        },
+        {
+          "rule": "AT = ở tại (địa điểm cụ thể)",
+          "example": "at the bus stop, at the door, at school, at work",
+          "note": "Dùng với: địa điểm chính xác, sự kiện"
+        },
+        {
+          "rule": "NEXT TO = bên cạnh, BETWEEN = ở giữa, UNDER = ở dưới",
+          "example": "The bank is next to the post office. The cat is under the table.",
+          "common_mistake": "next of ❌ (phải là 'next to')"
+        },
+        {
+          "rule": "IN FRONT OF = trước mặt, BEHIND = sau lưng, NEAR = gần",
+          "example": "The park is in front of my house. The school is near the market.",
+          "note": "Phân biệt 'in front of' (trước mặt) ≠ 'opposite' (đối diện)"
+        }
+      ],
+      "exercises": [
+        {
+          "question": "I live ___ Ho Chi Minh City.",
+          "options": [
+            "in",
+            "on",
+            "at",
+            "to"
+          ],
+          "correct": "in"
+        },
+        {
+          "question": "The book is ___ the table.",
+          "options": [
+            "in",
+            "on",
+            "at",
+            "under"
+          ],
+          "correct": "on"
+        },
+        {
+          "question": "She is waiting ___ the bus stop.",
+          "options": [
+            "in",
+            "on",
+            "at",
+            "to"
+          ],
+          "correct": "at"
+        },
+        {
+          "question": "My house is ___ the bank and the post office.",
+          "options": [
+            "next to",
+            "between",
+            "in front of",
+            "near"
+          ],
+          "correct": "between"
+        },
+        {
+          "question": "The cat is sleeping ___ the bed.",
+          "options": [
+            "in",
+            "on",
+            "under",
+            "at"
+          ],
+          "correct": "under"
+        }
+      ]
+    },
+    {
+      "id": "grammar-going-to-future",
+      "title": "Tương Lai: Be Going To & Will",
+      "vi_explanation": "Tiếng Việt chỉ dùng 'sẽ' cho mọi trường hợp. Tiếng Anh có 2 cách nói tương lai: 'be going to' (dự định từ trước) và 'will' (quyết định tại chỗ / dự đoán).",
+      "level": "A2",
+      "rules": [
+        {
+          "rule": "BE GOING TO = dự định đã lên kế hoạch từ trước",
+          "example": "I am going to visit my grandmother this weekend. → Tôi dự định về thăm bà cuối tuần này.",
+          "note": "Có bằng chứng: dark clouds → It is going to rain."
+        },
+        {
+          "rule": "WILL = quyết định ngay lúc nói / dự đoán không có bằng chứng",
+          "example": "I will call you later. → Tôi sẽ gọi bạn sau. (vừa mới quyết định)",
+          "common_mistake": "Dùng 'will' cho kế hoạch đã lên từ trước là không tự nhiên"
+        },
+        {
+          "rule": "Cấu trúc going to: am/is/are + going to + V",
+          "example": "She is going to study abroad. → Cô ấy dự định đi du học.",
+          "note": "Không quên 'am/is/are'!"
+        },
+        {
+          "rule": "Cấu trúc will: will + V (nguyên mẫu, không chia)",
+          "example": "I will help you. → Tôi sẽ giúp bạn.",
+          "common_mistake": "I will helping ❌ / He will helps ❌ (will + V nguyên mẫu)"
+        }
+      ],
+      "exercises": [
+        {
+          "question": "Look at those clouds! It ___ (rain).",
+          "options": [
+            "will rain",
+            "is going to rain",
+            "rains",
+            "rained"
+          ],
+          "correct": "is going to rain"
+        },
+        {
+          "question": "A: I don't understand this. B: I ___ help you.",
+          "options": [
+            "am going to",
+            "will",
+            "going to",
+            "am"
+          ],
+          "correct": "will"
+        },
+        {
+          "question": "She ___ (study) medicine next year.",
+          "options": [
+            "will studies",
+            "is going to study",
+            "going to study",
+            "studies"
+          ],
+          "correct": "is going to study"
+        },
+        {
+          "question": "I promise I ___ (not/be) late.",
+          "options": [
+            "won't be",
+            "am not going to be",
+            "don't be",
+            "not be"
+          ],
+          "correct": "won't be"
+        },
+        {
+          "question": "They ___ (get married) in June. They bought a ring.",
+          "options": [
+            "will get married",
+            "are going to get married",
+            "got married",
+            "get married"
+          ],
+          "correct": "are going to get married"
         }
       ]
     }
